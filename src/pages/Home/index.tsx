@@ -5,9 +5,9 @@ export const Home: React.FC = () => {
   return (
     <article className="services">
       <div className="services--header">
-        <div className="headerTextWrapper">
-          <h1 className="titleText">Services</h1>
-          <h4>ChainSafe offers clients best-in-class engineering, consulting, and auditing services for Web3.</h4>
+        <div className="title-wrapper">
+          <h1 className="title-text">Services</h1>
+          <p>ChainSafe offers clients best-in-class engineering, consulting, and auditing services for Web3.</p>
         </div>
       </div>
     </article>
