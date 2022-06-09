@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Neue Montreal;
+  src: url("../assets/fonts/NeueMontreal-Regular.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-Bold.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-BoldItalic.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-Italic.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-Light.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-LightItalic.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-MediumItalic.ttf") format("truetype"),
+       url("../assets/fonts/NeueMontreal-Medium.ttf") format("truetype");
+}
+
+$font-family: Neue Montreal, Arial, sans-serif;
+
+@mixin font-style($font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+%h1 {
+  @include font-style(2.125rem, 2.5rem);
+  letter-spacing: -0.02em;
+}
+
+%body-lg {
+  @include font-style(1.5rem, 2rem);
+}
+
+%body {
+  @include font-style(1.25rem, 1.65rem);
+  letter-spacing: 0.02em;
+}
+
+%link {
+  @include font-style(1.1rem, 1.5rem);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+%caption {
+  @include font-style(.875rem, 1.5rem);
+}
