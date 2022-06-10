@@ -3,13 +3,15 @@ import { Mission } from '../../components/Mission';
 import { Hero } from '../../components/Hero';
 import './index.scss';
 import { About } from '../../components/About';
+import { UseCases } from '../../components/UseCases';
 
 export const Home: React.FC = () => {
   return (
     <div className='container'>
       <Hero />
-      < Mission />
+      <Mission />
       <About />
+      <UseCases />
     </div>
   );
 };
