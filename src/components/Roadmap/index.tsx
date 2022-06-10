@@ -3,8 +3,8 @@ import './index.scss';
 
 export const Roadmap: React.FC = () => {
   return (
-    <article className="dev">
-      <div className="dev--header">
+    <article className="roadmap">
+      <div className="roadmap--header">
         <div className='double-column'>
           <h4>Yes, we're audited.</h4>
           <div className='text-wrapper'>

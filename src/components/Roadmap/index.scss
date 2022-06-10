@@ -2,8 +2,8 @@
 @import "src/styles/colors.scss";
 @import "src/styles/typography.scss";
 
-.dev {
-  background: $gray-200;
+.roadmap {
+  background: $primary;
   border-radius: 30px;
   margin-top: .5rem;
   padding: 2rem 0 3rem 0;
@@ -14,39 +14,12 @@
     &:first-of-type {
       padding: 1rem 0;
     }
-  }
+  }  
 }
 
-.dev button {
-  cursor: pointer;
-  border-radius: 12px;
-  padding: .5rem 1.2rem;
-  border: none;
-  background: $black;
-  transition: all 0.1s ease-out;
-  margin-right: .5rem;
-  a {
-    @extend %body;
-    font-size: 18px;
-    font-weight: bolder;
-    color: $white;
-    text-decoration: none;
-  }
-  &:hover {
-    background: #262626;
-  }
-  &:nth-of-type(2) {
-    background: $white;
-    a { color: $black }
-    &:hover {
-      background: $gray-100;
-    }
-  }
-}
-.dev .double-column {
+.roadmap .double-column {
   @media #{$mq-md} {
     flex-direction: row;
-    align-items: center;
   };
   display: flex;
   flex-direction: column;
@@ -79,6 +52,7 @@
       @media #{$mq-xl} {
         max-width: 30rem;
       }
+      margin: 0 2rem;
     }
   }
 }

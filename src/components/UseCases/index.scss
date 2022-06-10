@@ -12,8 +12,9 @@
   position: relative;
 
   &--title {
-    margin: 1rem 0;
-    padding: 0 2rem;
+    @media #{$mq-lg} { 
+      margin: 0 2rem;
+    }
 
     h2 {
       @extend %h1;
@@ -34,11 +35,11 @@
   }
 
   .tab {
-    @media #{$mq-md} { 
-     margin-right: .25rem;
+    @media #{$mq-lg} { 
+      margin: 0 2rem;
     }
+    margin: 0 1rem 0 0;
     @extend %body;
-    margin: 0 2rem;
     cursor: pointer;
     transition: 0.1s ease-out;
 
@@ -76,10 +77,10 @@
   }
 
   .content-selected {
-    @media #{$mq-md} {
-        flex-direction: row;
-        margin: 1.5rem 2rem 3rem;
-      }
+    @media #{$mq-lg} {
+      flex-direction: row;
+      margin: 1.5rem 2rem 3rem;
+    }
     display: flex;
     width: 100%;
     align-items: center;
