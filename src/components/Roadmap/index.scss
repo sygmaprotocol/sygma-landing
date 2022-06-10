@@ -41,18 +41,20 @@
       margin-left: 8px;
     }
     width: 100%;
-
+    
     h4 {
       @extend %body-lg;
       font-weight: bolder;
     }
-
+    
     p { 
-      @extend %body;
       @media #{$mq-xl} {
         max-width: 30rem;
       }
-      margin: 0 2rem;
+      @media #{$mq-md} {
+        margin: 0 2rem;
+      }
+      @extend %body;
     }
   }
 }

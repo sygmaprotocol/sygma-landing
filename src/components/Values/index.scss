@@ -16,7 +16,7 @@
 .values .column {
   @media #{$mq-md} {
     padding: 2rem 1rem;
-    height: 200px;
+    max-height: 200px;
     flex-direction: row;
   }
   @media #{$mq-lg} {
