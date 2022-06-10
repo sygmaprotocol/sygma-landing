@@ -1,0 +1,87 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.dev {
+  background: $gray-200;
+  border-radius: 30px;
+  min-height: 65vh;
+  margin-top: .5rem;
+  @media #{$mq-xl} {
+    min-height: 50vh;
+  }
+  &--header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    &:first-of-type {
+      padding: 2rem 0;
+    }
+  }
+}
+
+.dev button {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: .5rem 1.2rem;
+  border: none;
+  background: $black;
+  transition: all 0.1s ease-out;
+  margin-right: .5rem;
+  a {
+    @extend %body;
+    font-size: 18px;
+    font-weight: bolder;
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover {
+    background: #262626;
+  }
+  &:nth-of-type(2) {
+    background: $white;
+    a { color: $black }
+    &:hover {
+      background: $gray-100;
+    }
+  }
+}
+.dev .double-column {
+  @media #{$mq-md} {
+    flex-direction: row;
+    align-items: center;
+  };
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+
+  
+  img {
+    @media #{$mq-md} {
+      margin-right: 2rem;
+      width: 50%;
+    }
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .text-wrapper {
+    @media #{$mq-md} {
+      width: 50%;
+      margin-left: 8px;
+    }
+    width: 100%;
+
+    h4 {
+      @extend %body-lg;
+      font-weight: bolder;
+    }
+
+    p { 
+      @extend %body;
+      @media #{$mq-xl} {
+        max-width: 30rem;
+      }
+    }
+  }
+}

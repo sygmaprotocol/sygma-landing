@@ -5,6 +5,7 @@ import './index.scss';
 import { About } from '../../components/About';
 import { UseCases } from '../../components/UseCases';
 import { Values } from '../../components/Values';
+import { Dev } from '../../components/Dev';
 
 export const Home: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ export const Home: React.FC = () => {
       <About />
       <UseCases />
       <Values />
+      <Dev />
     </div>
   );
 };

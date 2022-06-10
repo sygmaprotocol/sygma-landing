@@ -13,8 +13,8 @@
   @media #{$mq-md} {
     margin: $margin-sm;
   }
+  margin: 4px;
   flex-direction: column;
   display: flex;
   justify-content: left;
-  // margin: 0 $margin-sm;
 }
