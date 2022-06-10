@@ -13,7 +13,7 @@ const tabContent = [
   {
     id: "1",
     imgUrl: "/place.png",
-    title: "Low slippage while staying nimble.",
+    title: "Stay nimble while keeping margins healthy.",
     caption: "Provisioning infrastructure for yield-aggregation is messy and high-maintenance. With ChainBridge, you can create a way for users to vote on proposals on their preferred networks."
   },
   {
