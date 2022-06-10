@@ -2,63 +2,20 @@
 @import "src/styles/colors.scss";
 @import "src/styles/typography.scss";
 
-.services {
+.container {
   @media #{$mq-xl} {
-    max-width: 80%;
-    left: 40%;
-    position: relative;
-    transform: translateX(-50%);
+    // max-width: 80%;
+    // left: 40%;
+    // position: relative;
+    // transform: translateX(-50%);
   }
   @media #{$mq-md} {
-    padding: 5rem 0;
-    margin: 2rem $margin-lg;
   }
   @media #{$mq-lg} {
-    padding: 2rem 0;
   }
   flex-direction: column;
   display: flex;
   justify-content: left;
-  margin: 0 $margin-sm 0 $margin-sm;
-
-  &--header {
-    @media #{$mq-md} {
-      padding: 5rem 0;
-      margin-top: 0vh;
-    }
-    @media #{$mq-lg} {
-      padding: 2rem 0;
-    }
-    flex-direction: column;
-    display: flex;
-    justify-content: left;
-    margin-top: 5vh;
-    overflow-x: hidden;
-
-    .title-wrapper {
-      @media #{$mq-sm} {
-        align-items: flex-start;
-      }
-      display: flex;
-      flex-direction: column;
-      margin: 2rem 0;
-    
-      p {
-        @extend %body-lg;
-        // margin-block-start: .8rem;
-        // margin-block-end: .8rem;
-        @media #{$mq-md} {
-          width: 50%;
-        }
-        width: 90%;
-      }
-
-      .title-text {
-        @extend %h1;
-        text-align: left;
-        margin: auto 0 0.25rem 0;
-      }
-  }
-  
-  }
+  margin: $margin-sm;
+  // margin: 0 $margin-sm;
 }

@@ -1,0 +1,62 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.hero {
+  background: $primary;
+  border-radius: 30px;
+  height: 80vh;
+  @media #{$mq-lg} {
+  }
+  &--header {
+    margin-top: 30vh;
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+    .title-wrapper {
+      @media #{$mq-sm} {
+        align-items: flex-start;
+      }
+      display: flex;
+      flex-direction: column;
+
+      .title-text {
+        @extend %h1;
+        font-weight: bolder;
+        text-align: left;
+        margin: auto 0 1rem 0;
+      }
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    button {
+      cursor: pointer;
+      border-radius: 12px;
+      padding: .5rem 1.2rem;
+      border: none;
+      background: $black;
+      transition: all 0.1s ease-out;
+      margin-right: .5rem;
+      a {
+        @extend %body;
+        font-size: 18px;
+        font-weight: bolder;
+        color: $white;
+        text-decoration: none;
+      }
+      &:hover {
+        background: #262626;
+      }
+      &:nth-of-type(2) {
+        background: $white;
+        a { color: $black }
+        &:hover {
+          background: $gray-100;
+        }
+      }
+    }
+  }
+}
