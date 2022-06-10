@@ -2,21 +2,6 @@
 @import "src/styles/colors.scss";
 @import "src/styles/typography.scss";
 
-.about {
-  background: $gray-200;
-  border-radius: 30px;
-
-  .img-wrapper {
-    @media #{$mq-md} {
-      min-height: 40vh;
-    };
-    border: 8px solid black;
-    margin: 2.5rem 2rem;
-    border-radius: 1rem;
-    background: $white;
-  }
-}
-
 .double-column {
   @media #{$mq-md} {
     flex-direction: row;

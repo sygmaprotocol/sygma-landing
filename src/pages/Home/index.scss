@@ -4,18 +4,17 @@
 
 .container {
   @media #{$mq-xl} {
-    // max-width: 80%;
-    // left: 40%;
-    // position: relative;
-    // transform: translateX(-50%);
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
   @media #{$mq-md} {
-  }
-  @media #{$mq-lg} {
+    margin: $margin-sm;
   }
   flex-direction: column;
   display: flex;
   justify-content: left;
-  margin: $margin-sm;
   // margin: 0 $margin-sm;
 }

@@ -5,8 +5,9 @@
 .hero {
   background: $primary;
   border-radius: 30px;
-  height: 80vh;
-  @media #{$mq-lg} {
+  min-height: 65vh;
+  @media #{$mq-xl} {
+    min-height: 50vh;
   }
   &--header {
     margin-top: 30vh;
