@@ -41,8 +41,8 @@
   }
 
   &--content-wrapper {
-    @media #{$mq-md} {
-      padding: 0 1rem;
+    @media #{$mq-lg} {
+      padding: 0 2rem;
       width: 100%;
     }
     padding: 1.5rem;

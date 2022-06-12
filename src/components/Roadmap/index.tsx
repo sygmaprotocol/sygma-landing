@@ -12,6 +12,14 @@ export const Roadmap: React.FC = () => {
             </p>
             </div>
         </div>
+        <br/>
+        <div className='double-column'>
+          <h4>Recommended Reading</h4>
+          <div className='text-wrapper'>
+            <p>Light paper
+            </p>
+            </div>
+        </div>
       </div>
     </article>
   )
