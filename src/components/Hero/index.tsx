@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
       <div className="hero--header">
         <div className='nav'>
           <img className='logo' src={logo} alt="" />
-          <Nav />
+          {/* <Nav /> */}
         </div>
         <div className="title-wrapper">
           <h1 className="title-text">Ground zero for building cross-chain applications.</h1>
