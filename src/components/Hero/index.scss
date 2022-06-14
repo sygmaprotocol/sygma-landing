@@ -10,16 +10,41 @@
     min-height: 50vh;
   }
   &--header {
-    margin-top: 30vh;
     padding: 2rem;
     flex-direction: column;
     display: flex;
+    position: relative;
     justify-content: center;
+    
+    .nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      top: 1rem;
+    }
+    
+    .logo {
+      left: 2rem;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .menu {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      // top: 1rem;
+      right: 3rem;
 
+    }
+    
     .title-wrapper {
       @media #{$mq-sm} {
         align-items: flex-start;
       }
+      margin-top: 30vh;
       display: flex;
       flex-direction: column;
 

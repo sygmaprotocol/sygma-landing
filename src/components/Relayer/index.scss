@@ -19,9 +19,6 @@
 }
 
 .relayer .double-column {
-  @media #{$mq-md} {
-    width: 100%;
-  };
   display: flex;
   flex-direction: column;
   margin: 0 2rem;

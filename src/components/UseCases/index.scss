@@ -12,9 +12,7 @@
   position: relative;
 
   &--title {
-    @media #{$mq-lg} { 
-      margin: 0 2rem;
-    }
+    margin: 0 2rem;
 
     h2 {
       @extend %h1;
@@ -31,14 +29,11 @@
     }
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
+    margin: 0 2rem;
   }
 
   .tab {
-    @media #{$mq-lg} { 
-      margin: 0 2rem;
-    }
-    margin: 0 1rem 0 0;
+    margin: 0 2rem;
     @extend %body;
     cursor: pointer;
     transition: 0.1s ease-out;

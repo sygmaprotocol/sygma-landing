@@ -41,9 +41,12 @@
   }
 
   &--content-wrapper {
+    @media #{$mq-md} {
+      padding: 0 1rem;
+      width: 100%;
+    }
     @media #{$mq-lg} {
       padding: 0 2rem;
-      width: 100%;
     }
     padding: 1.5rem;
     width: 85%;
@@ -57,9 +60,9 @@
   @media #{$mq-md} {
     margin-bottom: 1rem;
   }
+  padding: .5rem 1rem;
   border-radius: .5rem;
   border: 1px solid #5c5c5c;
-  padding: .5rem 1rem;
   @extend %body;
 }
 
