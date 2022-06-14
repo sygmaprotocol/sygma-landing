@@ -1,16 +1,22 @@
 import React from 'react'
 import './index.scss';
 
-export const Dev: React.FC = () => {
+export const Relayer: React.FC = () => {
   return (
-    <article className="dev">
-      <div className="dev--header">
+    <article className="relayer">
+      <div className="relayer--header">
         <div className='double-column'>
-          <h4>Yes, we're audited.</h4>
-          <div className='text-wrapper'>
-            <p>No single blockchain can suit everyone’s unique needs. A composability-oriented workflow happens when we build with adaptation top of mind. ChainBridge provides builders with exactly that.
-            </p>
-            </div>
+          <h4>Become a relayer partner and secure the future.</h4>
+          <button><a href="/">Apply Now</a></button>
+        </div>
+      </div>
+      <div className='relayer--partners'>
+        <div className='double-column'>
+          <h4>Thankful to those who make multichain possible.</h4>
+          <div className='showcase'>
+            <a href="/" className='showcase--item'> <div></div>
+            </a>
+          </div>
         </div>
       </div>
     </article>

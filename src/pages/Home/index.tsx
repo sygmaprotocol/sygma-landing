@@ -7,6 +7,7 @@ import { UseCases } from '../../components/UseCases';
 import { Values } from '../../components/Values';
 import { Dev } from '../../components/Dev';
 import { Roadmap } from '../../components/Roadmap';
+import { Relayer } from '../../components/Relayer';
 
 export const Home: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ export const Home: React.FC = () => {
       <Values />
       <Dev />
       <Roadmap />
+      <Relayer />
     </div>
   );
 };
