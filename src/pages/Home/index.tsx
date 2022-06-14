@@ -18,8 +18,8 @@ export const Home: React.FC = () => {
       <UseCases />
       <Values />
       <Dev />
-      <Roadmap />
-      <Relayer />
+      {/* <Roadmap /> */}
+      {/* <Relayer /> */}
     </div>
   );
 };
