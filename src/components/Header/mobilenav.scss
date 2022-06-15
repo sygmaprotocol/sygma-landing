@@ -6,10 +6,11 @@
 .background {
   position: absolute;
   top: -50px;
-  left: -50px;
+  // left: -50px;
+  right: 0;
   bottom: 0;
   height: 120vh;
-  width: 120vw;
+  width: 100vw;
   background: black;
 }
 
@@ -19,7 +20,7 @@
   position: absolute;
   right: 40px;
   padding: 25px;
-  max-width: 80%;;
+  max-width: 80%;
 }
 
 .navlink {
@@ -46,7 +47,6 @@
   display: block;
   cursor: pointer;
   width: 2rem;
-  // position: absolute;
   height: 2rem;
   border: none;
   z-index: 5000;

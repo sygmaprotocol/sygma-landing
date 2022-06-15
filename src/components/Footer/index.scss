@@ -1,0 +1,66 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.footer { 
+  @media #{$mq-xl} {
+    padding: 5rem 0;
+  }
+  border-radius: 12px 12px 0 0;
+  margin: 4rem 0 0;
+  padding: 2rem 0 1rem 0;
+  width: 100%;
+  background: $gray-200;
+  position: relative;
+  bottom: 0;
+
+  .links {
+    @media #{$mq-md} {
+      flex-direction: row;
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+
+    &--column {
+      @media #{$mq-xl} {
+        flex-basis: 400px;
+      }
+      @media #{$mq-md} {
+        margin: 0 2rem .5rem 1rem;
+      }
+      display: flex;
+      flex-direction: column;
+      margin: .5rem 0;
+      &:hover {
+        color: gray;
+        transition: 0.2s ease-in;
+      }
+      h4 {
+        @extend %body;
+        margin-block-start: 0;
+        margin-block-end: .5rem;
+      }
+      a {
+        @extend %body;
+        font-size: 18px;
+        text-decoration: none;
+        color: #262626;
+        &:hover {
+          color: $primary;
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+  }
+  .copyright {
+    @media #{$mq-md} {
+      margin: 0 2rem;
+    };
+    margin: 0 1rem;
+    p {
+      @extend %body;
+      font-size: 16px;
+    }
+  }
+}

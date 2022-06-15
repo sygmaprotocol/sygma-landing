@@ -88,10 +88,7 @@ const navlinks: NavLink[] = [
 ]
 
 
-
-type Props = {}
-
-export const Header = (props: Props) => {
+export const Header = () => {
 
   const { scrollY } = useViewportScroll();
 
@@ -116,7 +113,6 @@ export const Header = (props: Props) => {
         <img src={logo} alt="" />
         <h4>Sygma</h4>
       </div>
-      <div className='menu-toggle'>
       <motion.nav
         initial={false}
         className='mobile-menu'
@@ -163,9 +159,6 @@ export const Header = (props: Props) => {
           </svg>
         </button>
       </motion.nav>
-      </div>
-
-
     </nav>
   )
 }

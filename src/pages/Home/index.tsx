@@ -8,6 +8,7 @@ import { Values } from '../../components/Values';
 import { Dev } from '../../components/Dev';
 import { Roadmap } from '../../components/Roadmap';
 import { Relayer } from '../../components/Relayer';
+import { Footer } from '../../components/Footer';
 
 export const Home: React.FC = () => {
   return (
@@ -18,8 +19,7 @@ export const Home: React.FC = () => {
       <UseCases />
       <Values />
       <Dev />
-      {/* <Roadmap /> */}
-      {/* <Relayer /> */}
+      <Footer />
     </div>
   );
 };
