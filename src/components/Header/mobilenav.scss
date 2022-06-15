@@ -1,0 +1,57 @@
+@import "../../styles/typography.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+
+.background {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  bottom: 0;
+  height: 120vh;
+  width: 120vw;
+  background: black;
+}
+
+
+.navMenu {
+  top: 100px;
+  position: absolute;
+  right: 40px;
+  padding: 25px;
+  max-width: 80%;;
+}
+
+.navlink {
+  font-size: 1.2rem;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  
+  a {
+    @extend %body-lg;
+    margin: 1rem 0;
+  }
+}
+
+.noUnderline {
+  text-decoration: none;
+  color: $gray-100;
+}
+ 
+.menuToggle {
+  display: block;
+  cursor: pointer;
+  width: 2rem;
+  // position: absolute;
+  height: 2rem;
+  border: none;
+  z-index: 5000;
+  border: none;
+  outline: none;
+  background: transparent;
+
+}
