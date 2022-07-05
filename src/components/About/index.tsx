@@ -9,13 +9,13 @@ export const About: React.FC = () => {
       <div className='double-column'>
         <h4>Toolkit and protocol in one.</h4>
         <div className='text-wrapper'>
-          <p>ChainBridge is a layer that faciliates inter-blockchain communication, complete with an SDK to adapt to unique needs.</p>
+          <p>Sygma is a layer that faciliates inter-blockchain communication.<strong>*insert differentiating factor, or sdk if ready.*</strong></p>
             </div>
       </div>
       <div className='double-column'>
         <h4>Batteries are included.</h4>
         <div className='text-wrapper'>
-          <p>Builders of all levels can benefit from ChainBridge. Fork the token bridge UI, paste the swap widget, or start building your cross-chain app with the SDK.</p>
+          <p>Builders of all levels can benefit from Sygma. <strong>*insert here how to start building w Sygma*</strong></p>
             </div>
       </div>
     </article>

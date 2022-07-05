@@ -6,21 +6,21 @@ import './index.scss';
 const tabContent = [
   {
     id: "0",
-    title: "Enliven community presence on multiple chains.",
+    title: "Good-bye, silos. Hello, maximal interoperability.",
     imgUrl: "/place.png",
-    caption: "Provisioning infrastructure for cross-chain voting is messy and high-maintenance. With ChainBridge, you can create a way for users to vote on proposals on their preferred networks."
+    caption: "If you've deployed an dApp or protocol to multiple networks, Sygma's cross-domain communication layer enables you to make them interoperable. 👈"
   },
   {
     id: "1",
     imgUrl: "/place.png",
-    title: "Stay nimble while keeping margins healthy.",
-    caption: "Provisioning infrastructure for yield-aggregation is messy and high-maintenance. With ChainBridge, you can create a way for users to vote on proposals on their preferred networks."
+    title: "Enliven community presence on multiple chains.",
+    caption: "Provisioning infrastructure for cross-chain voting is messy and high-maintenance. With Sygma, you can create a way for users to vote on proposals on their preferred networks.👈"
   },
   {
     id: "2",
     imgUrl: "/place.png",
-    title: "Scale DAO Operations",
-    caption: "Provisioning infrastructure for yield-aggregation is messy and high-maintenance. With ChainBridge, you can create a way for users to vote on proposals on their preferred networks."
+    title: "Take your NFTs cross-chain and cross-rollup.",
+    caption: "Lower the barrier to access for your NFT projects. Sygma lets you leverage the benefits of other domains to make minting and moving NFTs breezier.👈"
   },
 ]
 
@@ -28,15 +28,15 @@ const tabContent = [
 const tabs = [
   {
     id: "0",
-    name: 'Remove silos with generic messaging',
+    name: 'Generic Message Passing Primitive',
   },
   {
     id: "1",
-    name: 'NFT Bridging',
+    name: 'Cross-Chain Governance',
   },
   {
     id: "2",
-    name: 'Cross-Chain Governance',
+    name: 'NFT Bridges',
   },
 ]
 

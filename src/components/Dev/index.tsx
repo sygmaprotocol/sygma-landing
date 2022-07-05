@@ -4,7 +4,7 @@ import './index.scss';
 export const Dev: React.FC = () => {
   return (
     <article className="dev">
-      <div className="dev--header">
+      {/* <div className="dev--header">
         <div className='double-column'>
          <img src='/place.png' alt="" />
           <div className='text-wrapper'>
@@ -13,13 +13,13 @@ export const Dev: React.FC = () => {
             </p>
             </div>
         </div>
-      </div>
+      </div> */}
       <div className="dev--header">
         <div className='double-column'>
          <img src='/place.png' alt="" />
           <div className='text-wrapper'>
-            <h4>How to use ChainBridge</h4>
-            <p>No single blockchain can suit everyone’s unique needs. A composability-oriented workflow happens when we build with adaptation top of mind. ChainBridge provides builders with exactly that.
+            <h4>How to use ChainBridge *FAQ can go here*</h4>
+            <p>Start building by....
             </p>
             </div>
         </div>
