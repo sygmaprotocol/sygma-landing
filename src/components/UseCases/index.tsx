@@ -28,15 +28,15 @@ const tabContent = [
 const tabs = [
   {
     id: "0",
-    name: 'Cross-Chain Governance',
+    name: 'Remove silos with generic messaging',
   },
   {
     id: "1",
-    name: 'Yield Aggregation',
+    name: 'NFT Bridging',
   },
   {
     id: "2",
-    name: 'Treasury Infrastructure',
+    name: 'Cross-Chain Governance',
   },
 ]
 

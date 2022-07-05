@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
           <h1 className="title-text">Ground zero for building cross-chain applications.</h1>
           <div className='button-wrapper'>
             <button><a href="/" rel="noopener noreferrer" target="_blank">Start Building</a></button>
-            <button><a href="/" rel="noopener noreferrer" target="_blank">Read Lightpaper</a></button>
+            <button><a href="/" rel="noopener noreferrer" target="_blank">Join Pilot Program</a></button>
           </div>
         </div>
       </div>

@@ -33,7 +33,10 @@
   }
 
   .tab {
-    margin: 0 2rem;
+    @media #{$mq-md} { 
+      margin: 0 2rem;
+    }
+    margin: .5rem 0;
     @extend %body;
     cursor: pointer;
     transition: 0.1s ease-out;
