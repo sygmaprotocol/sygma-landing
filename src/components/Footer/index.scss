@@ -3,37 +3,37 @@
 @import "src/styles/typography.scss";
 
 .footer { 
-  @media #{$mq-xl} {
-    padding: 5rem 0;
-  }
-  border-radius: 12px 12px 0 0;
   margin: 4rem 0 0;
-  padding: 2rem 0 1rem 0;
   width: 100%;
-  background: $gray-200;
   position: relative;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .links {
-    @media #{$mq-md} {
-      flex-direction: row;
+    @media #{$mq-xl} {
+      max-width: 1200px;
+      padding: 0 20%;
     }
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 1rem 0;
 
     &--column {
       @media #{$mq-xl} {
-        flex-basis: 400px;
+        flex-basis: 200px;
       }
       @media #{$mq-md} {
-        margin: 0 2rem .5rem 1rem;
+        flex-direction: row;
+        margin: 0;
       }
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin: .5rem 0;
       &:hover {
-        color: gray;
+        // color: gray;
         transition: 0.2s ease-in;
       }
       h4 {
@@ -41,23 +41,60 @@
         margin-block-start: 0;
         margin-block-end: .5rem;
       }
-      a {
+      .footer-link {
         @extend %body;
         font-size: 18px;
         text-decoration: none;
+        margin-right: 1rem;
         color: #262626;
+        font-weight: bolder;
         &:hover {
           color: $primary;
           transition: 0.2s ease-in;
         }
       }
+      .icons {
+        text-align: end;
+        svg {
+          cursor: pointer;
+          margin-right: .5rem;
+          &:hover {
+            transition: 0.2s ease-in;
+            color: $primary;
+          }
+        }
+      }
+      button {
+        @media #{$mq-md} {
+          margin-left: 2rem;
+        }
+        cursor: pointer;
+        border-radius: 8px;
+        padding: .4rem;
+        border: none;
+        background: $black;
+        transition: all 0.1s ease-out;
+        width: 200px;
+        .newsletter-link {
+          @extend %body;
+          font-size: 18px;
+          font-weight: bolder;
+          color: $white;
+          margin-right: none;
+          text-decoration: none;
+        }
+        &:hover {
+          background: #262626;
+        }
+      }
+    }
+    &--column:nth-of-type(2) {
+      display: flex;
+      row-gap: .5rem;
+      justify-self: end;
     }
   }
   .copyright {
-    @media #{$mq-md} {
-      margin: 0 2rem;
-    };
-    margin: 0 1rem;
     p {
       @extend %body;
       font-size: 16px;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Mission } from '../../components/Mission';
 import { Hero } from '../../components/Hero';
 import './index.scss';
@@ -12,14 +12,16 @@ import { Footer } from '../../components/Footer';
 
 export const Home: React.FC = () => {
   return (
-    <div className='container'>
-      <Hero />
-      <Mission />
-      <About />
-      <UseCases />
-      <Values />
-      <Dev />
+    <Fragment>
+      <div className='container'>
+        <Hero />
+        <Mission />
+        <About />
+        <UseCases />
+        <Values />
+        <Dev />
+      </div>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
