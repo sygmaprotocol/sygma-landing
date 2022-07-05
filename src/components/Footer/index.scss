@@ -27,15 +27,11 @@
       @media #{$mq-md} {
         flex-direction: row;
         margin: 0;
+        align-items: center;
       }
       display: flex;
       flex-direction: column;
-      align-items: center;
       margin: .5rem 0;
-      &:hover {
-        // color: gray;
-        transition: 0.2s ease-in;
-      }
       h4 {
         @extend %body;
         margin-block-start: 0;
