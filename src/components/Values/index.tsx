@@ -16,7 +16,7 @@ export const Values: React.FC = () => (
       <div className='column--content-wrapper'>
         <span className='pill white'>Experiment freely.</span>
         <h2 className='content white'>
-          Go beyond the EVM. ChainBridge will support Substrate-based blockchains soon.
+          Go beyond the EVM. Sygma will support Substrate-based blockchains soon.
         </h2>
       </div>
     </div>

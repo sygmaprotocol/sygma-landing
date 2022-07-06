@@ -7,18 +7,18 @@ const tabContent = [
   {
     id: "0",
     title: "Good-bye, silos. Hello, maximal interoperability.",
-    imgUrl: "/place.png",
+    imgUrl: "/cross-chain-vote.png",
     caption: "If you've deployed an dApp or protocol to multiple networks, Sygma's cross-domain communication layer enables you to make them interoperable. 👈"
   },
   {
     id: "1",
-    imgUrl: "/place.png",
+    imgUrl: "/gov.png",
     title: "Enliven community presence on multiple chains.",
     caption: "Provisioning infrastructure for cross-chain voting is messy and high-maintenance. With Sygma, you can create a way for users to vote on proposals on their preferred networks.👈"
   },
   {
     id: "2",
-    imgUrl: "/place.png",
+    imgUrl: "/nft-bridge.png",
     title: "Take your NFTs cross-chain and cross-rollup.",
     caption: "Lower the barrier to access for your NFT projects. Sygma lets you leverage the benefits of other domains to make minting and moving NFTs breezier.👈"
   },

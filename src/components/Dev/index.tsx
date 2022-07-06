@@ -18,7 +18,7 @@ export const Dev: React.FC = () => {
         <div className='double-column'>
          <img src='/place.png' alt="" />
           <div className='text-wrapper'>
-            <h4>How to use ChainBridge *FAQ can go here*</h4>
+            <h4>How to use Sygma</h4>
             <p>Start building by....
             </p>
             </div>
