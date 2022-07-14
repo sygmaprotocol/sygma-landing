@@ -5,6 +5,7 @@
 .about {
   background: $gray-200;
   border-radius: 30px;
+  margin-bottom: .5rem;
 
   .img-wrapper {
     @media #{$mq-md} {
@@ -40,9 +41,9 @@
     width: 100%;
     p { 
       @extend %body;
-      @media #{$mq-xl} {
-        max-width: 40rem;
-      }
+      // @media #{$mq-xl} {
+      //   max-width: 30rem;
+      // }
 
     }
   }

@@ -6,9 +6,8 @@ import { About } from '../../components/About';
 import { UseCases } from '../../components/UseCases';
 import { Values } from '../../components/Values';
 import { Dev } from '../../components/Dev';
-import { Roadmap } from '../../components/Roadmap';
-import { Relayer } from '../../components/Relayer';
 import { Footer } from '../../components/Footer';
+import { Cred } from '../../components/Cred';
 
 export const Home: React.FC = () => {
   return (
@@ -18,6 +17,7 @@ export const Home: React.FC = () => {
         <Mission />
         <About />
         <UseCases />
+        <Cred />
         <Values />
         <Dev />
       </div>
