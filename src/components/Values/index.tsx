@@ -8,7 +8,7 @@ export const Values: React.FC = () => (
       <div className='column--content-wrapper'>
         <span className='pill'>Unwalled garden.</span>
         <h2 className='content'>
-          Open source and no network lock-in. Like pretty much everything <span className='link'>ChainSafe</span> builds. 
+          Open source and no network lock-in.
         </h2>
       </div>
     </div>

@@ -6,21 +6,27 @@ import './index.scss';
 const tabContent = [
   {
     id: "0",
-    title: "Good-bye, silos. Hello, maximal interoperability.",
-    imgUrl: "/cross-chain-vote.png",
-    caption: "If you've deployed an dApp or protocol to multiple networks, Sygma's cross-domain communication layer enables you to make them interoperable. 👈"
+    title: "Boost app experience across networks.",
+    imgUrl: "/Seamless.png",
+    caption: "Show users you mean business by meeting them where they are. Grow engagement by providing a consistent UX and utilizing features specific to their preferred networks."
   },
   {
     id: "1",
-    imgUrl: "/gov.png",
-    title: "Enliven community presence on multiple chains.",
-    caption: "Provisioning infrastructure for cross-chain voting is messy and high-maintenance. With Sygma, you can create a way for users to vote on proposals on their preferred networks.👈"
+    imgUrl: "/NFT.png",
+    title: "Unleash the non-fungibles.",
+    caption: "Lower the barrier to access for your NFT projects. Sygma lets you leverage the benefits of other domains to make minting and moving NFTs easier."
   },
   {
     id: "2",
-    imgUrl: "/nft-bridge.png",
-    title: "Take your NFTs cross-chain and cross-rollup.",
-    caption: "Lower the barrier to access for your NFT projects. Sygma lets you leverage the benefits of other domains to make minting and moving NFTs breezier.👈"
+    imgUrl: "/gov.png",
+    title: "Enliven community presence on multiple networks.",
+    caption: "Provisioning infrastructure for cross-chain voting is high-maintenance. Sygma’s interoperability layer lets users engage in DAOs or vote on proposals from the network of their choosing."
+  },
+  {
+    id: "3",
+    imgUrl: "/Token.png",
+    title: "Unlock the silos of value.",
+    caption: "Cross-chain token transfers are nothing new but are essential. Let Sygma take your dApp beyond standard transfers to the multi-chain world in a single setup."
   },
 ]
 
@@ -28,15 +34,19 @@ const tabContent = [
 const tabs = [
   {
     id: "0",
-    name: 'Generic Message Passing Primitive',
+    name: 'Seamless multi-chain apps',
   },
   {
     id: "1",
-    name: 'Cross-Chain Governance',
+    name: 'NFT Bridging',
   },
   {
     id: "2",
-    name: 'NFT Bridges',
+    name: 'Cross-chain Governance',
+  },
+  {
+    id: "3",
+    name: 'Token and Liquidity transfers',
   },
 ]
 
@@ -68,9 +78,9 @@ export const UseCases: React.FC = () => {
     <article className='use-cases'>
       <div className='column'>
         <div className='use-cases--title'>
-          <h2>
-            New opportunities everywhere.
-          </h2>
+          <h1>
+            Do what couldn’t be done before.
+          </h1>
         </div>
         <div className='use-cases--tab-menu'>
           {tabs.map(({ id, name }) => (

@@ -17,29 +17,26 @@
   }
 }
 
-.double-column {
-  @media #{$mq-md} {
-    flex-direction: row;
-    align-items: flex-start;
-  };
+.single-column {
   display: flex;
   flex-direction: column;
   margin: 1rem 2rem;
   
-  h4 {
+  h1 {
     @extend %h1;
     font-weight: bolder;
     margin-block-start: 1.5rem;
     margin-block-end: 0;
-    @media #{$mq-md} {
-      width: 50%;
-    }
+    width: 100%;
+  }
+  h2 {
+    @extend %body-lg;
+    font-weight: bolder;
+    margin-block-start: 1.5rem;
+    margin-block-end: 0;
     width: 100%;
   }
   .text-wrapper {
-    @media #{$mq-md} {
-      width: 50%;
-    }
     width: 100%;
 
     p { 
