@@ -38,10 +38,8 @@
   }
   .text-wrapper {
     width: 100%;
-
     p { 
       @extend %body;
-
       @media #{$mq-xl} {
         max-width: 30rem;
       }

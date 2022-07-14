@@ -30,9 +30,12 @@
         text-align: left;
         margin: auto 0 0 0;
       }
-      p {
-        @extend %body;
+    }
+    .hero-description {
+      @media #{$mq-lg} {
+        max-width: 44rem;
       }
+      @extend %body;
     }
   }
   .button-wrapper {

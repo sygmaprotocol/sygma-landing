@@ -6,21 +6,23 @@ export const Dev: React.FC = () => {
     <article className="dev">
       <div className="dev--header">
         <div className='double-column'>
-         <img src='/place.png' alt="" />
+         <img src='/architecture.png' alt="" />
           <div className='text-wrapper'>
-            <h4>Architecture</h4>
+            <h1>Architecture</h1>
             <p>Sygma uses an external verification model with MPC between relayers to secure cross-chain message passing.
             </p>
+            <button><a href="/" target="_blank" rel="noopener noreferrer">Read More</a></button>
             </div>
         </div>
       </div>
       <div className="dev--header">
         <div className='double-column'>
-         <img src='/place.png' alt="" />
+         <img src='/sdk.png' alt="" />
           <div className='text-wrapper'>
-            <h4>How to use Sygma</h4>
-            <p>Start building by....
+            <h1>How to use Sygma</h1>
+            <p>Start building cross-chain dApps with the ChainBridge SDK.
             </p>
+            <button><a href="/" target="_blank" rel="noopener noreferrer">Get Started</a></button>
             </div>
         </div>
       </div>
