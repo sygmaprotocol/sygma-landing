@@ -6,16 +6,6 @@
   background: $gray-200;
   border-radius: 30px;
   margin-bottom: 1rem;
-
-  .img-wrapper {
-    @media #{$mq-md} {
-      min-height: 40vh;
-    };
-    border: 8px solid black;
-    margin: 2.5rem 2rem;
-    border-radius: 1rem;
-    background: $white;
-  }
 }
 
 .single-column {
@@ -38,12 +28,14 @@
     width: 100%;
   }
   .text-wrapper {
-    width: 100%;
     p { 
       @extend %body;
-      // @media #{$mq-xl} {
-      //   max-width: 30rem;
-      // }
+      @media #{$mq-md} {
+        width: 75%;
+      }
+      @media #{$mq-xl} {
+        max-width: 30rem;
+      }
 
     }
   }

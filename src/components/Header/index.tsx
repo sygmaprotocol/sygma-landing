@@ -112,7 +112,7 @@ export const Header = () => {
         <img src="logo.png" alt="" />
         <h4>Sygma</h4>
       </div>
-      <motion.nav
+      {/* <motion.nav
         initial={false}
         className='mobile-menu'
         animate={isOpen ? "open" : "closed"}
@@ -157,7 +157,7 @@ export const Header = () => {
             />
           </svg>
         </button>
-      </motion.nav>
+      </motion.nav> */}
     </nav>
   )
 }
