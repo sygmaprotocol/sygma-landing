@@ -8,7 +8,7 @@ const tabContent = [
     id: "0",
     title: "Boost app experience across networks.",
     imgUrl: "/Seamless.png",
-    caption: "Show users you mean business by meeting them where they are. Grow engagement by providing a consistent UX and utilizing features specific to their preferred networks."
+    caption: "Show users you mean business by meeting them where they are. Grow engagement by providing a unified application experience that is built for users, not for the underlying protocol."
   },
   {
     id: "1",
@@ -27,7 +27,7 @@ const tabContent = [
     imgUrl: "/Token.png",
     title: "Unlock the silos of value.",
     caption: "Cross-chain token transfers are nothing new but are essential. Let Sygma take your dApp beyond standard transfers to the multi-chain world in a single setup."
-  },
+  }
 ]
 
 

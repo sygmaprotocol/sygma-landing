@@ -8,17 +8,19 @@ import { Values } from '../../components/Values';
 import { Dev } from '../../components/Dev';
 import { Footer } from '../../components/Footer';
 import { Cred } from '../../components/Cred';
+import { Callout } from '../../components/Callout';
 
 export const Home: React.FC = () => {
   return (
     <Fragment>
       <div className='container'>
         <Hero />
-        <Mission />
-        <About />
-        <UseCases />
+        <Callout />
         <Cred />
         <Values />
+        <Mission />
+        <UseCases />
+        <About />
         <Dev />
       </div>
       <Footer />

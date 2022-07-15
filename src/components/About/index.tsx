@@ -4,8 +4,6 @@ import './index.scss';
 export const About: React.FC = () => {
   return (
     <article className='about'>
-      {/* <div className='img-wrapper'>
-      </div> */}
       <div className='single-column'>
         <h1>Sygma's multi-chain vision</h1>
         <div className='text-wrapper'>

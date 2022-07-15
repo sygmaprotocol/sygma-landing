@@ -3,8 +3,7 @@ import './index.scss';
 import { motion, useViewportScroll } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import './mobilenav.scss';
-import logo from "../../assets/logo.svg";
-
+import logo from '../../assets/logo.svg';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -110,7 +109,7 @@ export const Header = () => {
   return (
     <nav className='nav'>
       <div className='brand'>
-        <img src={logo} alt="" />
+        <img src="logo.png" alt="" />
         <h4>Sygma</h4>
       </div>
       <motion.nav

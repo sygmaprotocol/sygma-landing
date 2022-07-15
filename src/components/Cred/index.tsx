@@ -3,7 +3,7 @@ import './index.scss';
 
 export const Cred: React.FC = () => {
   return (
-    <article className='about'>
+    <article className='cred'>
       <div className='single-column'>
         <h1>Previously ChainBridge</h1>
         <div className='text-wrapper'>
