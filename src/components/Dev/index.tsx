@@ -20,7 +20,7 @@ export const Dev: React.FC = () => {
          <img src='/sdk.png' alt="" />
           <div className='text-wrapper'>
             <h1>How to use Sygma</h1>
-            <p>Start building cross-chain dApps with the ChainBridge SDK.
+            <p>Start building cross-chain dApps with the Sygma SDK.
             </p>
             <button><a href="https://app.gitbook.com/o/-Mj0KanKueNHMn8Fv_O7/s/21yMAnSNSkIhTPu2Lk5h/sygma-sdk" target="_blank" rel="noopener noreferrer">Get Started</a></button>
             </div>
