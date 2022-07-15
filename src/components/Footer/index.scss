@@ -12,15 +12,14 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 
   .links {
     @media #{$mq-xl} {
       max-width: 1200px;
       padding: 0 20%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin: 1rem 1rem 0;
 
     &--column {

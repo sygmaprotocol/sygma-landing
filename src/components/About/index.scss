@@ -3,23 +3,88 @@
 @import "src/styles/typography.scss";
 
 .about {
-  background: $gray-200;
-  border-radius: 30px;
-
-  .img-wrapper {
-    @media #{$mq-md} {
-      min-height: 40vh;
-    };
-    border: 8px solid black;
-    margin: 2.5rem 2rem;
-    border-radius: 1rem;
-    background: $white;
-  }
-}
-
-.single-column {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.about .columns {
+  @media #{$mq-md} {
+    flex-direction: row;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about .column {
+  @media #{$mq-md} {
+    padding: 2rem 1rem;
+    max-height: 200px;
+    flex-direction: row;
+  }
+  @media #{$mq-lg} {
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 30px;
+  background-color: $gray-200;
+  
+  &:first-of-type {
+    margin-bottom: 1rem;
+    
+    @media #{$mq-md} {
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &--content-wrapper {
+    @media #{$mq-md} {
+      padding: 0 1rem;
+      width: 100%;
+    }
+    @media #{$mq-lg} {
+      padding: 0 2rem;
+    }
+    padding: 2rem 1rem;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    h1 {
+      @extend %body-lg;
+      font-weight: bolder;
+      margin-block-start: 1.5rem;
+      margin-block-end: 0;
+      width: 100%;
+    }
+    .text-wrapper {
+      width: 100%;
+      p { 
+        @extend %body;
+        @media #{$mq-xl} {
+          max-width: 40rem;
+        }
+
+      }
+    }
+  }
+}
+.about .single-column {
+  align-self: flex-start;
   margin: 1rem 2rem;
   
   h1 {
@@ -28,22 +93,5 @@
     margin-block-start: 1.5rem;
     margin-block-end: 0;
     width: 100%;
-  }
-  h2 {
-    @extend %body-lg;
-    font-weight: bolder;
-    margin-block-start: 1.5rem;
-    margin-block-end: 0;
-    width: 100%;
-  }
-  .text-wrapper {
-    width: 100%;
-    p { 
-      @extend %body;
-      @media #{$mq-xl} {
-        max-width: 40rem;
-      }
-
-    }
   }
 }
