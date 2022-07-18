@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
           <p className="hero-description">Sygma is the interoperability layer for building cross-blockchain applications. </p>
           <div className='button-wrapper'>
             {/* <a href="https://sygma.chainsafe.io/docs" rel="noopener noreferrer" target="_blank">Start Building</a> */}
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekXkenIvi4jCL1RdmxlNVg3_VkxI2nbFAK1EM4TIGE5b1hug/viewform" rel="noopener noreferrer" target="_blank">Join Pilot Program</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekXkenIvi4jCL1RdmxlNVg3_VkxI2nbFAK1EM4TIGE5b1hug/viewform" rel="noopener noreferrer" target="_blank">Join Our Pilot</a>
           </div>
         </div>
       </div>
