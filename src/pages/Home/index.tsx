@@ -9,6 +9,7 @@ import { Dev } from '../../components/Dev';
 import { Footer } from '../../components/Footer';
 import { Cred } from '../../components/Cred';
 import { Callout } from '../../components/Callout';
+import { Pilot } from '../../components/Pilot';
 
 export const Home: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ export const Home: React.FC = () => {
         <Mission />
         <UseCases />
         <About />
+        <Pilot />
         <Dev />
       </div>
       <Footer />

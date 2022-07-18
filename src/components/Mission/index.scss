@@ -2,7 +2,7 @@
 @import "src/styles/colors.scss";
 @import "src/styles/typography.scss";
 
-.double-column {
+.mission .double-column {
   @media #{$mq-md} {
     flex-direction: row;
     align-items: flex-start;
@@ -31,7 +31,7 @@
       @extend %body;
 
       @media #{$mq-xl} {
-        max-width: 30rem;
+        max-width: 40rem;
       }
 
     }

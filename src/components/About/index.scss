@@ -6,15 +6,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  // align-items: center;
   margin-bottom: 1rem;
 }
 
 .about .columns {
-  @media #{$mq-md} {
+  @media #{$mq-xl} {
+    justify-content: flex-start;
+  }
+  @media #{$mq-lg} {
     flex-direction: row;
   }
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +46,7 @@
   &:first-of-type {
     margin-bottom: 1rem;
     
-    @media #{$mq-md} {
+    @media #{$mq-lg} {
       margin-right: 1rem;
       margin-bottom: 0;
     }
@@ -76,7 +78,7 @@
       p { 
         @extend %body;
         @media #{$mq-xl} {
-          max-width: 40rem;
+          max-width: 60rem;
         }
 
       }
