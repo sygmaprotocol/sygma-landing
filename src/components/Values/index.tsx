@@ -8,7 +8,7 @@ export const Values: React.FC = () => (
       <div className='column--content-wrapper'>
         <span className='pill'>Audit in progress.</span>
         <h2 className='content'>
-          The repo will be made public after the audit is completed. In the meantime, check out <a className='link' href="/" target="_blank" rel="noopener noreferrer">ChainBridge V2.</a>
+          The repo will be made public after the audit is completed. In the meantime, check out <a className='link' href="https://github.com/ChainSafe/ChainBridge" target="_blank" rel="noopener noreferrer">ChainBridge V2.</a>
         </h2>
       </div>
     </div>
