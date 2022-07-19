@@ -79,7 +79,7 @@ const navlinks: NavLink[] = [
   {
     id: 4,
     name: "About",
-    linkUrl: "https://medium.com/chainsafe-systems",
+    linkUrl: "https://medium.com/buildwithsygma/sygma-next-generation-interoperability-1b89bfc671a4",
   },
 ]
 
