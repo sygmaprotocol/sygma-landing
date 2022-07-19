@@ -62,27 +62,24 @@ const navlinks: NavLink[] = [
   {
     id: 1,
     name: "Docs",
-    linkUrl: "https://web3js.readthedocs.io/en/v1.5.2/",
-    description: "velit esse cillum dolore eu fugiat nulla pariatur."
+    linkUrl: "https://docs.buildwithsygma.com/",
+
+  },
+  {
+    id: 1,
+    name: "Github",
+    linkUrl: "https://docs.buildwithsygma.com/github-repositories",
 
   },
   {
     id: 3,
     name: "Join Discord",
     linkUrl: "https://discord.com/invite/xSAwrnCWcg",
-    description: "quis nostrum exercitationem ullam corporis suscipi."
   },
   {
     id: 4,
-    name: "Blog",
+    name: "About",
     linkUrl: "https://medium.com/chainsafe-systems",
-    description: "Quis autem vel eum iure reprehenderit"
-  },
-  {
-    id: 5,
-    name: "GitHub",
-    linkUrl: "https://github.com/chainsafe/web3.js",
-    description: "expound the actual teachings of the great explorer of the truth",
   },
 ]
 
@@ -112,7 +109,7 @@ export const Header = () => {
         <img src="logo.png" alt="" />
         <h4>Sygma</h4>
       </div>
-      {/* <motion.nav
+      <motion.nav
         initial={false}
         className='mobile-menu'
         animate={isOpen ? "open" : "closed"}
@@ -157,7 +154,7 @@ export const Header = () => {
             />
           </svg>
         </button>
-      </motion.nav> */}
+      </motion.nav>
     </nav>
   )
 }

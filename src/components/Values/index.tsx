@@ -6,9 +6,9 @@ export const Values: React.FC = () => (
   <article className='values'>
     <div className='column'>
       <div className='column--content-wrapper'>
-        <span className='pill'>Audit in progress.</span>
+        <span className='pill'>Unwalled garden.</span>
         <h2 className='content'>
-          The repo will be made public after the audit is completed. In the meantime, check out <a className='link' href="https://github.com/ChainSafe/ChainBridge" target="_blank" rel="noopener noreferrer">ChainBridge V2.</a>
+          <a className='link' href="https://docs.buildwithsygma.com/github-repositories" target="_blank" rel="noopener noreferrer">Open-source</a> and no lock-in.
         </h2>
       </div>
     </div>
