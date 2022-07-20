@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
             <a href="https://twitter.com/buildwithsygma" target="_blank" rel="noopener noreferrer"><TwitterLogo size={32} /></a>
             <a href="hhttps://docs.buildwithsygma.com/github-repositories" target="_blank" rel="noopener noreferrer"><GithubLogo size={32} /></a>
           </div>
-          <button><a href="https://chainsafe.typeform.com/to/lYjEEAoJ" className="newsletter-link" target="_blank" rel="noopener noreferrer" >Sign up for updates</a></button>
+          <button><a href="https://share.hsforms.com/19jA2jY8yRf6DKe1LtK5qJQ4kcdm" className="newsletter-link" target="_blank" rel="noopener noreferrer" >Sign up for updates</a></button>
         </div>
       </div>
     </footer>
