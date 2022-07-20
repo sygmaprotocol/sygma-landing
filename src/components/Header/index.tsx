@@ -67,6 +67,12 @@ const navlinks: NavLink[] = [
   },
   {
     id: 1,
+    name: "Litepaper",
+    linkUrl: "/litepaper.pdf",
+
+  },
+  {
+    id: 1,
     name: "Github",
     linkUrl: "https://docs.buildwithsygma.com/github-repositories",
 
