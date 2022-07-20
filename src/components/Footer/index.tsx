@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
           <div className='icons'>
             <a href="https://discord.com/channels/593655374469660673/994352333653803008" target="_blank" rel="noopener noreferrer"><DiscordLogo size={32} /></a>
             <a href="https://twitter.com/buildwithsygma" target="_blank" rel="noopener noreferrer"><TwitterLogo size={32} /></a>
-            <a href="hhttps://docs.buildwithsygma.com/github-repositories" target="_blank" rel="noopener noreferrer"><GithubLogo size={32} /></a>
+            <a href="https://docs.buildwithsygma.com/github-repositories" target="_blank" rel="noopener noreferrer"><GithubLogo size={32} /></a>
           </div>
           <button><a href="https://share.hsforms.com/19jA2jY8yRf6DKe1LtK5qJQ4kcdm" className="newsletter-link" target="_blank" rel="noopener noreferrer" >Sign up for updates</a></button>
         </div>
