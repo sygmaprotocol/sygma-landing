@@ -17,6 +17,7 @@
     h1 {
       @extend %h1;
       font-size: 40px;
+      line-height: 48px;
       font-weight: bolder;
       color: $black;
     }
