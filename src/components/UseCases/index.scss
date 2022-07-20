@@ -61,7 +61,7 @@
 
   .active-tab {
     color: $primary;
-    font-weight: bolder;
+    font-weight: 600;
   }
 
   .tab-content {
@@ -107,7 +107,7 @@
         }
         @extend %body-lg;
         margin-bottom: 0;
-        font-weight: bolder;
+        font-weight: 600;
       }
 
       p {

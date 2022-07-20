@@ -9,12 +9,14 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    overflow-x: scroll;
   }
   @media #{$mq-md} {
     margin: $margin-sm;
   }
   margin: 4px;
-  flex-direction: column;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
 }

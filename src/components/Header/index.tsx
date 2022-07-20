@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './index.scss';
-import { motion, useViewportScroll } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './mobilenav.scss';
-import logo from '../../assets/logo.svg';
 
 const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 1200px 40px)`,
+  open: (height = 2000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 3000px 400px)`,
     transition: {
       type: "spring",
       stiffness: 20,
@@ -50,7 +48,7 @@ const staggerSelf = {
   }
 };
 
-export interface NavLink {
+export interface NavLink0 {
   id?: number;
   name: string;
   linkUrl: string;
@@ -58,7 +56,7 @@ export interface NavLink {
 }
 
 
-const navlinks: NavLink[] = [
+const navlinks: NavLink0[] = [
   {
     id: 0,
     name: "Docs",
@@ -97,22 +95,8 @@ const navlinks: NavLink[] = [
 
 export const Header = () => {
 
-  const { scrollY } = useViewportScroll();
-
-  const [hidden, setHidden] = useState(false);
   const [isOpen, toggleOpen] = useState(false);
 
-  const update = () => {
-    if (scrollY?.get() < scrollY.getPrevious() && scrollY?.get() < 200) {
-      setHidden(false);
-    } else if (scrollY?.get() > 100 && scrollY?.get() > scrollY?.getPrevious()) {
-      setHidden(true);
-    }
-  }
-  
-  useEffect(() => {
-    return scrollY.onChange(() => update());
-  })
 
   return (
     <nav className='nav'>
