@@ -16,7 +16,6 @@
       max-width: 1200px;
       padding: 0 20%;
       display: grid;
-      grid-template-columns: 1fr 1fr;
     }
     margin: 1rem 1rem 0;
 
@@ -26,12 +25,12 @@
       }
       @media #{$mq-md} {
         flex-direction: row;
-        margin: 0;
+        margin: .5rem 0;
         align-items: center;
       }
       display: flex;
       flex-direction: column;
-      margin: .5rem 0;
+      margin: 1rem 0;
       h4 {
         @extend %body;
         margin-block-start: 0;
@@ -50,7 +49,9 @@
         }
       }
       .icons {
-        text-align: end;
+        @media #{$mq-lg} {
+          text-align: end;
+        }
         svg {
           cursor: pointer;
           margin-right: .5rem;
