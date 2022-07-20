@@ -52,7 +52,8 @@
         @media #{$mq-lg} {
           text-align: end;
         }
-        svg {
+        a {
+          color: $black;
           cursor: pointer;
           margin-right: .5rem;
           &:hover {
@@ -60,6 +61,7 @@
             color: $primary;
           }
         }
+
       }
       button {
         @media #{$mq-md} {

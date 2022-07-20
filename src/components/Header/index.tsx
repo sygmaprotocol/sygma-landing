@@ -60,7 +60,7 @@ export interface NavLink {
 
 const navlinks: NavLink[] = [
   {
-    id: 1,
+    id: 0,
     name: "Docs",
     linkUrl: "https://docs.buildwithsygma.com/",
 
@@ -72,20 +72,25 @@ const navlinks: NavLink[] = [
 
   },
   {
-    id: 1,
+    id: 2,
+    name: "About",
+    linkUrl: "https://medium.com/buildwithsygma/sygma-next-generation-interoperability-1b89bfc671a4",
+  },
+  {
+    id: 5,
+    name: "Join our Pilot",
+    linkUrl: "https://docs.google.com/forms/d/e/1FAIpQLSekXkenIvi4jCL1RdmxlNVg3_VkxI2nbFAK1EM4TIGE5b1hug/viewform",
+  },
+  {
+    id: 3,
     name: "Github",
     linkUrl: "https://docs.buildwithsygma.com/github-repositories",
 
   },
   {
-    id: 3,
+    id: 4,
     name: "Join Discord",
     linkUrl: "https://discord.com/invite/xSAwrnCWcg",
-  },
-  {
-    id: 4,
-    name: "About",
-    linkUrl: "https://medium.com/buildwithsygma/sygma-next-generation-interoperability-1b89bfc671a4",
   },
 ]
 
