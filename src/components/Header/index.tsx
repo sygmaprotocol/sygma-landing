@@ -66,7 +66,7 @@ const navlinks: NavLink0[] = [
   {
     id: 1,
     name: "Litepaper",
-    linkUrl: "/litepaper.pdf",
+    linkUrl: "/sygma-litepaper.pdf",
 
   },
   {
