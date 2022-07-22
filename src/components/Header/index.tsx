@@ -77,7 +77,7 @@ const navlinks: NavLink0[] = [
   {
     id: 5,
     name: "Join our Pilot",
-    linkUrl: "https://docs.google.com/forms/d/e/1FAIpQLSekXkenIvi4jCL1RdmxlNVg3_VkxI2nbFAK1EM4TIGE5b1hug/viewform",
+    linkUrl: "https://share.hsforms.com/1xWV8j5P4RbyXoYppB5n4yw4kcdm",
   },
   {
     id: 3,
