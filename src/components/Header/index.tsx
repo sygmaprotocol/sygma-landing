@@ -88,7 +88,7 @@ const navlinks: NavLink0[] = [
   {
     id: 4,
     name: "Join Discord",
-    linkUrl: "https://discord.com/invite/xSAwrnCWcg",
+    linkUrl: "https://discord.gg/Qdf6GyNB5J",
   },
 ]
 
