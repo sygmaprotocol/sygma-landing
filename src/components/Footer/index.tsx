@@ -1,11 +1,9 @@
 import React from 'react'
 import './index.scss';
 import { DiscordLogo, GithubLogo, TwitterLogo,  } from 'phosphor-react';
-
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
-
-
   return (
     <footer className='footer'>
       <div className='links'>
@@ -17,13 +15,9 @@ export const Footer: React.FC = () => {
             className='footer-link'>
             Docs
           </a>
-          <a
-            href='/about'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='footer-link'>
+          <Link to='/about' className='footer-link'>
             About Us
-          </a>
+          </Link>
           <div className='icons'>
             <a
               href='https://discord.gg/Qdf6GyNB5J'
@@ -57,4 +51,4 @@ export const Footer: React.FC = () => {
       </div>
     </footer>
   );
-}
+};

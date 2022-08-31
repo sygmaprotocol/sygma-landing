@@ -59,38 +59,35 @@ export interface NavLink0 {
 const navlinks: NavLink0[] = [
   {
     id: 0,
-    name: "Docs",
-    linkUrl: "https://docs.buildwithsygma.com/",
-
+    name: 'Docs',
+    linkUrl: 'https://docs.buildwithsygma.com/',
   },
   {
     id: 1,
-    name: "Litepaper",
-    linkUrl: "/sygma-litepaper.pdf",
-
+    name: 'Litepaper',
+    linkUrl: '/sygma-litepaper.pdf',
   },
   {
     id: 2,
-    name: "About",
-    linkUrl: "https://medium.com/buildwithsygma/sygma-next-generation-interoperability-1b89bfc671a4",
+    name: 'About',
+    linkUrl: '/about',
   },
   {
     id: 5,
-    name: "Join our Pilot",
-    linkUrl: "https://share.hsforms.com/1xWV8j5P4RbyXoYppB5n4yw4kcdm",
+    name: 'Join our Pilot',
+    linkUrl: 'https://share.hsforms.com/1xWV8j5P4RbyXoYppB5n4yw4kcdm',
   },
   {
     id: 3,
-    name: "Github",
-    linkUrl: "https://docs.buildwithsygma.com/github-repositories",
-
+    name: 'Github',
+    linkUrl: 'https://docs.buildwithsygma.com/github-repositories',
   },
   {
     id: 4,
-    name: "Join Discord",
-    linkUrl: "https://discord.gg/Qdf6GyNB5J",
+    name: 'Join Discord',
+    linkUrl: 'https://discord.gg/Qdf6GyNB5J',
   },
-]
+];
 
 
 export const Header = () => {
