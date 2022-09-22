@@ -1,27 +1,25 @@
 import React from 'react';
 import './index.scss';
 
-export const Mission: React.FC = () => {
+export const ProjectInfo: React.FC = () => {
   return (
-    <section className='mission'>
+    <section className='project-info'>
       <div className='double-column'>
-        <h1>Grow multi-dimensionally. </h1>
-        <div className='text-wrapper'>
-          <p>
-            Expand into untapped markets. Reduce complexity. Achieve deeper
-            liquidity. Let Sygma take care of the underlying infrastructure and
-            leverage the power of multiple blockchains.
-          </p>
-        </div>
-      </div>
-      <div className='double-column'>
-        <h1>More interoperability, more consistency</h1>
-        <div className='text-wrapper'>
-          <p>
-            Inconsistent cross-platform experiences and liquidity fragmentation
-            hinders dApp growth. Sygma’s SDK makes cross-chain expansion easy
-            for developers and seamless for end-users.
-          </p>
+        <a
+          className='link'
+          href='https://audit.haechi.io/wp-content/uploads/2022/09/HAECHI-AUDIT-Sygma-Audit-Report-v1.1.pdf'
+          target='_blank'
+          rel='noopener noreferrer'>
+          <h1>Download audit report</h1>
+        </a>
+        <div className='audit-logo'>
+          <h1>Audited by</h1>{' '}
+          <a
+            href='https://audit.haechi.io/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <img src='haechi.png' alt='' />
+          </a>
         </div>
       </div>
     </section>
