@@ -1,6 +1,11 @@
 import React from 'react'
 import './index.scss';
-import { DiscordLogo, GithubLogo, TwitterLogo,  } from 'phosphor-react';
+import {
+  DiscordLogo,
+  GithubLogo,
+  TwitterLogo,
+  MediumLogo,
+} from 'phosphor-react';
 import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
@@ -30,6 +35,12 @@ export const Footer: React.FC = () => {
               target='_blank'
               rel='noopener noreferrer'>
               <TwitterLogo size={32} />
+            </a>
+            <a
+              href='https://medium.com/buildwithsygma'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <MediumLogo size={32} />
             </a>
             <a
               href='https://docs.buildwithsygma.com/github-repositories'

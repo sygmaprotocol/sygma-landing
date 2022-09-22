@@ -57,30 +57,30 @@ export interface NavLink {
 const navlinks: NavLink[] = [
   {
     id: 1,
-    name: "Docs",
-    linkUrl: "https://web3js.readthedocs.io/en/v1.5.2/",
-    description: "velit esse cillum dolore eu fugiat nulla pariatur."
-
+    name: 'Docs',
+    linkUrl: 'https://web3js.readthedocs.io/en/v1.5.2/',
+    description: 'velit esse cillum dolore eu fugiat nulla pariatur.',
   },
   {
     id: 3,
-    name: "Join Discord",
-    linkUrl: "https://discord.com/invite/xSAwrnCWcg",
-    description: "quis nostrum exercitationem ullam corporis suscipi."
+    name: 'Join Discord',
+    linkUrl: 'https://discord.com/invite/xSAwrnCWcg',
+    description: 'quis nostrum exercitationem ullam corporis suscipi.',
   },
   {
     id: 4,
-    name: "Blog",
-    linkUrl: "https://medium.com/chainsafe-systems",
-    description: "Quis autem vel eum iure reprehenderit"
+    name: 'Blog',
+    linkUrl: 'https://medium.com/buildwithsygma',
+    description: 'Quis autem vel eum iure reprehenderit',
   },
   {
     id: 5,
-    name: "GitHub",
-    linkUrl: "https://github.com/chainsafe/web3.js",
-    description: "expound the actual teachings of the great explorer of the truth",
+    name: 'GitHub',
+    linkUrl: 'https://github.com/chainsafe/web3.js',
+    description:
+      'expound the actual teachings of the great explorer of the truth',
   },
-]
+];
 
 
 export const MobileNav = () => {

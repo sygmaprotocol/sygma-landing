@@ -79,6 +79,11 @@ const navlinks: NavLink0[] = [
   },
   {
     id: 3,
+    name: 'Blog',
+    linkUrl: 'https://medium.com/buildwithsygma',
+  },
+  {
+    id: 5,
     name: 'Github',
     linkUrl: 'https://docs.buildwithsygma.com/github-repositories',
   },
