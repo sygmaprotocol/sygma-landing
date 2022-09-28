@@ -39,8 +39,15 @@
     }
   }
   .button-wrapper {
+    @media #{$mq-lg} {
+      flex-direction: row;
+    }
     display: flex;
+    flex-direction: column;
     a {
+      @media #{$mq-lg} {
+        margin: 0 .5rem 0 0;
+      }
       @extend %body;
       font-size: 18px;
       font-weight: bolder;
@@ -51,8 +58,8 @@
       border: none;
       background: $black;
       transition: all 0.1s ease-out;
-      margin-right: .5rem;
       border-radius: 12px;
+      margin-bottom: .5rem;
       &:nth-of-type(2) {
         background: $white;
         color: $black;
