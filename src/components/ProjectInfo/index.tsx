@@ -18,7 +18,7 @@ export const ProjectInfo: React.FC = () => {
             href='https://audit.haechi.io/'
             target='_blank'
             rel='noopener noreferrer'>
-            <img src='haechi.png' alt='' />
+            <img src='kalos.png' alt='' />
           </a>
         </div>
       </div>
