@@ -1,7 +1,6 @@
 import { motion, useTransform, useScroll } from 'framer-motion';
 import { stylesWithCssVar } from '@/utils/useCssVar';
 import { useRef } from 'react';
-import { stickToTop } from '@/styles/animations';
 
 const stats = [
   { id: 1, name: 'Protocol history' },
@@ -29,7 +28,6 @@ export default function InnerNav() {
       viewport={{ once: true, amount: 0.8 }}>
       <motion.div
         // ref={targetRef}
-        variants={stickToTop}
         className='hidden lg:block bg-white py-2 sm:py-2'>
         <div className='mx-auto w-full px-6 lg:px-0 top-0'>
           <div className='mx-auto'>
