@@ -25,12 +25,11 @@ const prepareForSerialization = (obj: any) => {
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
-  const allPosts = JSON.stringify(posts);
-  return prepareForSerialization({
+  return {
     props: {
-      results: posts,
+      posts: JSON.parse(JSON.stringify(posts)),
     },
-  });
+  };
 };
 
 const getPosts = async () => {
@@ -57,7 +56,7 @@ export default function Home(props: any) {
       <UseSygmaTo />
       <BuildersProgram />
       <Contact />
-      {/* <BlogTeaser posts={posts} /> */}
+      <BlogTeaser posts={posts} />
       {/* <CTA /> */}
       <Footer />
     </>

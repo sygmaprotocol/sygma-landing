@@ -37,12 +37,11 @@ const SlidingWords = (props: Props) => {
     target: targetRef,
     offset: ['start start', 'end end'],
   });
-  //instead of this one scroll based, let's just have a plain marquee.
 
   const fadeOut = useTransform(scrollYProgress, [1, 0.2, 0], [1, 1, 0]);
 
   // set the title based on the word selected
-  const [text, setText] = useState('swaps');
+  const [text, setText] = useState('your app');
 
   const animateCurrentWord = (index: number) => {
     setText(words[index].useCase);
