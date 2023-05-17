@@ -18,21 +18,20 @@ import ProductOverview from '@/sections/ProductOverview';
 import _ from 'lodash';
 
 const prepareForSerialization = (obj: any) => {
-  return obj.mapValues(obj, (value: any) =>
+  return _.mapValues(obj, (value: any) =>
     typeof value === 'undefined' ? null : value
   );
 };
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
-  // const allPosts = JSON.stringify(posts);
+  const allPosts = JSON.stringify(posts);
   return prepareForSerialization({
     props: {
       results: posts,
     },
   });
 };
-
 
 const getPosts = async () => {
   const response = await fetch(
@@ -44,7 +43,7 @@ const getPosts = async () => {
 };
 
 export default function Home(props: any) {
-  // const { posts } = props;
+  const { posts } = props;
   return (
     <>
       <Hero />

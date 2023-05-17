@@ -41,14 +41,15 @@ const SlidingWords = (props: Props) => {
 
   const fadeOut = useTransform(scrollYProgress, [1, 0.2, 0], [1, 1, 0]);
 
-  // record the index of the word selected
-  const [currentIndex, setCurrentIndex] = useState(0);
   // set the title based on the word selected
   const [text, setText] = useState('swaps');
 
-  const animateCurrentWord = (word: any) => {
-    setCurrentIndex(word);
-    setText(words[currentIndex].useCase);
+  const animateCurrentWord = (index: number) => {
+    setText(words[index].useCase);
+  };
+
+  const resetWord = () => {
+    setText('your app');
   };
 
   return (
@@ -64,7 +65,10 @@ const SlidingWords = (props: Props) => {
         style={{ opacity: fadeOut }}
         className='grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center'>
         {words.map((word, index) => (
-          <Pill onMouseEnter={() => animateCurrentWord(index)} key={index}>
+          <Pill
+            onMouseEnter={() => animateCurrentWord(index)}
+            onMouseLeave={() => resetWord()}
+            key={index}>
             {word.title}
           </Pill>
         ))}
