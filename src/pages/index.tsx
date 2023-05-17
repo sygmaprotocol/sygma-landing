@@ -18,7 +18,7 @@ import ProductOverview from '@/sections/ProductOverview';
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
-  const allPosts = JSON.stringify(posts);
+  const allPosts = JSON.parse(JSON.stringify(posts));
   return {
     props: {
       allPosts,
@@ -36,7 +36,7 @@ const getPosts = async () => {
 };
 
 export default function Home(props: any) {
-  const { posts } = props;
+  // const { posts } = props;
   return (
     <>
       <Hero />
@@ -50,7 +50,7 @@ export default function Home(props: any) {
       <UseSygmaTo />
       <BuildersProgram />
       <Contact />
-      <BlogTeaser posts={posts} />
+      {/* <BlogTeaser posts={posts} /> */}
       {/* <CTA /> */}
       <Footer />
     </>
