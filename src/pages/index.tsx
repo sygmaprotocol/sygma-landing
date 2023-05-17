@@ -16,26 +16,26 @@ import { MotionThrough } from '@/sections/MotionThrough';
 import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
 
-// export const getStaticProps = async (params: any) => {
-//   const posts = await getPosts();
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// };
+export const getStaticProps = async (params: any) => {
+  const posts = await getPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
+};
 
-// const getPosts = async () => {
-//   const response = await fetch(
-//     `https://testing123.ghost.io/ghost/api/v3/content/posts/?key=${process.env.REACT_APP_GHOST_API_KEY}`
-//   ).then((res) => res.json());
-//   console.log(response.posts);
+const getPosts = async () => {
+  const response = await fetch(
+    `https://testing123.ghost.io/ghost/api/v3/content/posts/?key=${process.env.REACT_APP_GHOST_API_KEY}`
+  ).then((res) => res.json());
+  console.log(response.posts);
 
-//   return response.posts;
-// };
+  return response.posts;
+};
 
 export default function Home(props: any) {
-  // const { posts } = props;
+  const { posts } = props;
   return (
     <>
       <Hero />
@@ -43,13 +43,13 @@ export default function Home(props: any) {
       <ProtocolHistory />
       <ProductOverview />
       {/* <MotionThrough /> */}
-      {/* <CoreFeatures /> */}
+      <CoreFeatures />
       <BridgeDesign />
       <SlidingWords />
-      {/* <UseSygmaTo /> */}
-      {/* <BuildersProgram /> */}
-      {/* <Contact /> */}
-      {/* <BlogTeaser posts={posts} /> */}
+      <UseSygmaTo />
+      <BuildersProgram />
+      <Contact />
+      <BlogTeaser posts={posts} />
       {/* <CTA /> */}
       <Footer />
     </>
