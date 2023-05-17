@@ -15,7 +15,7 @@ import BuildersProgram from '@/sections/BuildersProgram';
 import { MotionThrough } from '@/sections/MotionThrough';
 import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
-import _ from 'lodash';
+import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
@@ -46,21 +46,23 @@ const getPosts = async () => {
 export default function Home(props: any) {
   const { posts } = props;
   return (
-    <>
-      <Hero />
-      <LogoCloud />
-      <ProtocolHistory />
-      <ProductOverview />
-      {/* <MotionThrough /> */}
-      <CoreFeatures />
-      <BridgeDesign />
-      <SlidingWords />
-      <UseSygmaTo />
-      <BuildersProgram />
-      <Contact />
-      <BlogTeaser posts={posts} />
-      {/* <CTA /> */}
-      <Footer />
-    </>
+    <HubspotProvider>
+      <>
+        <Hero />
+        <LogoCloud />
+        <ProtocolHistory />
+        <ProductOverview />
+        {/* <MotionThrough /> */}
+        <CoreFeatures />
+        <BridgeDesign />
+        <SlidingWords />
+        <UseSygmaTo />
+        <BuildersProgram />
+        <Contact />
+        <BlogTeaser posts={posts} />
+        {/* <CTA /> */}
+        <Footer />
+      </>
+    </HubspotProvider>
   );
 }

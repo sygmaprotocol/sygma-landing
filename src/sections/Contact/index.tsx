@@ -4,8 +4,14 @@ import {
 } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { fadeInVariant } from '@/styles/animations';
+import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form';
 
 export default function Contact() {
+  const { loaded, error, formCreated } = useHubspotForm({
+    portalId: '39701769',
+    formId: 'f0ee17fe-2445-49c5-be1e-32999a97563b',
+    target: '#my-hubspot-form',
+  });
   return (
     <motion.div
       initial='offscreen'
@@ -38,16 +44,10 @@ export default function Contact() {
             <p className='mt-2 leading-7 text-gray-600'>
               Hire Sygma to help you go cross-chain.
             </p>
-            <p className='mt-4'>
-              <a
-                href='#'
-                className='text-sm font-semibold leading-6 text-primary-100'>
-                Contact us <span aria-hidden='true'>&rarr;</span>
-              </a>
-            </p>
+            <div className='mt-3' id='my-hubspot-form'></div>
           </div>
         </div>
-        <div className='flex gap-x-6 mx-5'>
+        {/* <div className='flex gap-x-6 mx-5'>
           <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100'>
             <BugAntIcon className='h-6 w-6 text-white' aria-hidden='true' />
           </div>
@@ -66,7 +66,7 @@ export default function Contact() {
               </a>
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
