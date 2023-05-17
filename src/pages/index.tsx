@@ -15,16 +15,24 @@ import BuildersProgram from '@/sections/BuildersProgram';
 import { MotionThrough } from '@/sections/MotionThrough';
 import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
+import _ from 'lodash';
+
+const prepareForSerialization = (obj: any) => {
+  return obj.mapValues(obj, (value: any) =>
+    typeof value === 'undefined' ? null : value
+  );
+};
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
-  const allPosts = JSON.parse(JSON.stringify(posts));
-  return {
+  // const allPosts = JSON.stringify(posts);
+  return prepareForSerialization({
     props: {
-      allPosts,
+      results: posts,
     },
-  };
+  });
 };
+
 
 const getPosts = async () => {
   const response = await fetch(
