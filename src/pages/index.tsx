@@ -18,9 +18,10 @@ import ProductOverview from '@/sections/ProductOverview';
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
+  const allPosts = JSON.stringify(posts);
   return {
     props: {
-      posts,
+      allPosts,
     },
   };
 };
