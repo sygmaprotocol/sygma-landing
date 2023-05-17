@@ -16,13 +16,14 @@ export default function Contact() {
         variants={fadeInVariant}
         className='mx-auto max-w-2xl sm:text-center'>
         <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-          Contact sales
+          Contact the team
         </h2>
         <p className='mt-2 text-lg leading-8 text-gray-600'>
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Get help building on top of Sygma protocol, or ask a question in
+          Discord.
         </p>
       </motion.div>
-      <div className='flex flex-col lg:flex-row space-y-2 justify-center lg:items-center mx-auto mt-20 w-full lg:space-y-0'>
+      <div className='flex flex-col lg:flex-row space-y-2 justify-center lg:items-center mx-auto mt-10 w-full lg:space-y-0'>
         <div className='flex gap-x-6 mx-5'>
           <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100'>
             <ChatBubbleLeftRightIcon

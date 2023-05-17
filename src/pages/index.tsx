@@ -27,6 +27,11 @@ export const getStaticProps = async (params: any) => {
       },
     };
   }
+  return {
+    props: {
+      posts: [],
+    },
+  };
 };
 
 const getPosts = async () => {
