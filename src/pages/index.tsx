@@ -17,20 +17,16 @@ import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
 import _ from 'lodash';
 
-const prepareForSerialization = (obj: any) => {
-  return _.mapValues(obj, (value: any) =>
-    typeof value === 'undefined' ? null : value
-  );
-};
-
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
-  const parsedPosts = JSON.parse(JSON.stringify(posts));
-  return {
-    props: {
-      posts: parsedPosts,
-    },
-  };
+  if (posts) {
+    const parsedPosts = JSON.parse(JSON.stringify(posts));
+    return {
+      props: {
+        posts: parsedPosts,
+      },
+    };
+  }
 };
 
 const getPosts = async () => {
