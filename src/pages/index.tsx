@@ -25,9 +25,10 @@ const prepareForSerialization = (obj: any) => {
 
 export const getStaticProps = async (params: any) => {
   const posts = await getPosts();
+  const parsedPosts = JSON.parse(JSON.stringify(posts));
   return {
     props: {
-      posts: JSON.parse(JSON.stringify(posts)),
+      posts: parsedPosts,
     },
   };
 };
