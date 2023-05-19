@@ -24,5 +24,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 2238a825c5aca59233eab1f221f7aefb
           projectName: sygma-landing
-          directory: .next/
+          directory: dist/
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
