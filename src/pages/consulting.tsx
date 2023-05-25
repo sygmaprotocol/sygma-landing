@@ -5,14 +5,14 @@ import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import DeveloperHero from '@/sections/DeveloperHero';
 import BlogGrid from '@/sections/BlogGrid';
 
-export default function Developer(props: any) {
+export default function Contact(props: any) {
   const { posts } = props;
   return (
-    // <HubspotProvider>
-    <>
-      <DeveloperHero />
-      <Footer />
-    </>
-    // </HubspotProvider>
+    <HubspotProvider>
+      <>
+        <DeveloperHero />
+        <Footer />
+      </>
+    </HubspotProvider>
   );
 }

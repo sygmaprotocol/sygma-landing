@@ -3,7 +3,7 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid';
 export default function DeveloperHero() {
   return (
     <div className='bg-white'>
-      <div className='relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20'>
+      <div className='relative isolate overflow-hidden bg-gradient-to-b from-gray-100/20'>
         <div className='mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40'>
           <div className='px-6 lg:px-0 lg:pt-4'>
             <div className='mx-auto max-w-2xl'>
@@ -15,7 +15,7 @@ export default function DeveloperHero() {
                 />
                 <div className='mt-24 sm:mt-32 lg:mt-16'>
                   <a href='#' className='inline-flex space-x-6'>
-                    <span className='rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10'>
+                    <span className='rounded-full bg-primary-100/10 px-3 py-1 text-sm font-semibold leading-6 text-primary-100 ring-1 ring-inset ring-primary-100/10'>
                       What's new
                     </span>
                     <span className='inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600'>
@@ -37,7 +37,7 @@ export default function DeveloperHero() {
                 <div className='mt-10 flex items-center gap-x-6'>
                   <a
                     href='#'
-                    className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
+                    className='rounded-md bg-primary-100 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-100'>
                     Get started
                   </a>
                   <a
@@ -51,7 +51,7 @@ export default function DeveloperHero() {
           </div>
           <div className='mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen'>
             <div
-              className='absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36'
+              className='absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white shadow-xl shadow-primary-100/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36'
               aria-hidden='true'
             />
             <div className='shadow-lg md:rounded-3xl'>

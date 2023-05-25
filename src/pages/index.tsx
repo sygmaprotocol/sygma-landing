@@ -18,6 +18,7 @@ import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import type { Post } from '@/sections/BlogTeaser';
+// import { getPosts } from '@/ghost-client';
 
 // get posts from ghost blog
 export const getStaticProps = async (params: any) => {
@@ -41,32 +42,33 @@ const getPosts = async () => {
   const response = await fetch(
     `https://testing123.ghost.io/ghost/api/v3/content/posts/?key=${process.env.REACT_APP_GHOST_API_KEY}`
   ).then((res) => res.json());
-  console.log(response.posts);
+  // console.log(response.posts);
 
   return response.posts;
 };
 
 
+
 export default function Home(props: any) {
   const { posts } = props;
   return (
-    <HubspotProvider>
-      <>
-        <Hero />
-        <LogoCloud />
-        <ProtocolHistory />
-        <ProductOverview />
-        {/* <MotionThrough /> */}
-        <CoreFeatures />
-        <BridgeDesign />
-        <SlidingWords />
-        <UseSygmaTo />
-        <BuildersProgram />
-        <Contact />
-        <BlogTeaser posts={posts} />
-        <CTA />
-        <Footer />
-      </>
-    </HubspotProvider>
+    // <HubspotProvider>
+    <>
+      <Hero />
+      <LogoCloud />
+      <ProtocolHistory />
+      <ProductOverview />
+      {/* <MotionThrough /> */}
+      <CoreFeatures />
+      <BridgeDesign />
+      <SlidingWords />
+      <UseSygmaTo />
+      <BuildersProgram />
+      {/* <Contact /> */}
+      {/* <BlogTeaser posts={posts} /> */}
+      <CTA />
+      <Footer />
+    </>
+    // </HubspotProvider>
   );
 }
