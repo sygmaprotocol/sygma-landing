@@ -14,7 +14,7 @@ export default function ProtocolHistory() {
           <div className='lg:pr-4'>
             <div className='relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-80 shadow-2xl sm:px-12 lg:max-w-xl lg:px-8 lg:pb-8 xl:px-10 xl:pb-10'>
               <img
-                className='absolute bottom-0 inset-0 h-full w-full object-cover object-top brightness-100 contrast-125'
+                className='absolute bottom-0 inset-0 h-full w-full object-cover object-top brightness-105 contrast-125'
                 src='/car.png'
                 alt=''
               />
@@ -22,9 +22,6 @@ export default function ProtocolHistory() {
           </div>
           <div>
             <div className='text-base leading-7 text-gray-700 lg:max-w-lg'>
-              <p className='text-base font-medium leading-7 text-primary-100'>
-                Previously known as ChainBridge
-              </p>
               <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl'>
                 Harness the power of multiple blockchains.
               </h1>
@@ -32,6 +29,7 @@ export default function ProtocolHistory() {
                 <p className='mt-3 leading-6 text-gray-400'>
                   Built on pioneering bridge tech, Sygma is a community-focused
                   protocol that's decentralized, transparent, and pluralistic.
+                  **PENDING**
                 </p>
               </div>
             </div>
@@ -47,11 +45,6 @@ export default function ProtocolHistory() {
                 </div>
               ))}
             </dl>
-            <div className='mt-10 flex'>
-              <ExternalButton type='link' href='#'>
-                Learn why we became Sygma <span aria-hidden='true'>&rarr;</span>
-              </ExternalButton>
-            </div>
           </div>
         </div>
       </div>

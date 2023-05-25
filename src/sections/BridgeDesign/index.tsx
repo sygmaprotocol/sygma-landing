@@ -53,7 +53,7 @@ export default function BridgeDesign() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as='dd' className='mt-2 pr-12'>
-                      <p className='text-gray-900'>Extended answers go here</p>
+                      <p className='text-gray-900'>{property.expandedText}</p>
                     </Disclosure.Panel>
                   </>
                 )}

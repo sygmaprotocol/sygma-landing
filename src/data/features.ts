@@ -14,11 +14,11 @@ export const coreFeatures: ICoreFeature[] = [
     status: "Live on mainnet"
   },
   {
-    title: "ERC20 transfers",
+    title: "EVM asset support",
     status: "Live on mainnet"
   },
   {
-    title: "ERC721 & 721a transfers",
+    title: "Substrate asset support",
     status: "Live on mainnet"
   },
   {
@@ -26,7 +26,7 @@ export const coreFeatures: ICoreFeature[] = [
     status: "In development"
   },
   {
-    title: "Competitively low fees",
+    title: "Competitive fees",
     status: "In development"
   },
 ]
@@ -35,6 +35,7 @@ export interface IDesignFeature {
   title: string;
   desc: string;
   badgeText: string;
+  expandedText?: string;
 }
 
 export const designFeatures: IDesignFeature[] = [
@@ -42,26 +43,25 @@ export const designFeatures: IDesignFeature[] = [
     title: "Permissionlessness",
     desc: "Can you build without being whitelisted?",
     badgeText: "Yes",
+    expandedText: "Any project can use Sygma's generic message passing handler.",
   },
   {
     title: "Architecture type",
     desc: "How are transactions validated?",
     badgeText: "MPC",
+    expandedText: "[add sentence from mpc article]",
   },
   {
     title: "Settlement",
     desc: "How long does it take on average?",
-    badgeText: "30 blocks",
+    badgeText: "{PENDING TIME}",
+    expandedText: "The expected time it takes to transfer is dependent on the finality times of the blockchains involved. However, you can expect EVM to Substrate transfers to typically take {min} to {max} time."
   },
   {
-    title: "Availability",
-    desc: "What is the uptime estimation?",
-    badgeText: "High",
-  },
-  {
-    title: "Validator set",
-    desc: "How many validators vote on transactions?",
-    badgeText: "12",
+    title: "Relayer set",
+    desc: "How many relayers vote on transactions?",
+    badgeText: "5",
+    expandedText: "Currently there are 5 relayers that vote on cross-chain transfers. There will be 3 more added in {date}, and eventually reaching a maximum of 12."
   },
 ]
 

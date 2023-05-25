@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { Inter } from 'next/font/google';
 import Hero from '@/sections/Hero';
 import Footer from '@/components/Footer';
 import ProtocolHistory from '@/sections/ProtocolHistory';
@@ -16,31 +17,18 @@ import { MotionThrough } from '@/sections/MotionThrough';
 import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
+import type { Post } from '@/sections/BlogTeaser';
 
-export const getStaticProps = async (params: any) => {
-  const posts = await getPosts();
-  if (posts) {
-    const parsedPosts = JSON.parse(JSON.stringify(posts));
-    return {
-      props: {
-        posts: parsedPosts,
-      },
-    };
-  }
-  return {
-    props: {
-      posts: [],
-    },
-  };
-};
-
-const getPosts = async () => {
-  const response = await fetch(
+// get posts from ghost blog
+export const getStaticProps: GetStaticProps<{
+  posts: Post;
+}> = async () => {
+  const res = await fetch(
     `https://testing123.ghost.io/ghost/api/v3/content/posts/?key=${process.env.REACT_APP_GHOST_API_KEY}`
-  ).then((res) => res.json());
-  console.log(response.posts);
-
-  return response.posts;
+  );
+  const parsedResponse = await res.json();
+  const posts = parsedResponse.posts;
+  return { props: { posts }, revalidate: 10 };
 };
 
 export default function Home(props: any) {
@@ -60,7 +48,7 @@ export default function Home(props: any) {
         <BuildersProgram />
         <Contact />
         <BlogTeaser posts={posts} />
-        {/* <CTA /> */}
+        <CTA />
         <Footer />
       </>
     </HubspotProvider>

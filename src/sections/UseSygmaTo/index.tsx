@@ -1,5 +1,7 @@
 import React from 'react';
-import Man from '@/assets/man.svg';
+import Man from '@/assets/men2.svg';
+import Cpu from '@/assets/cpu.svg';
+import Astro from '@/assets/astro.svg';
 import { motion } from 'framer-motion';
 import {
   parentVariant,
@@ -33,19 +35,20 @@ const UseSygmaTo = (props: Props) => {
         className='flex flex-col lg:flex-row justify-center lg:items-center mx-auto mt-5 w-full lg:content-center lg:space-x-4'>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>Reduce fees for your userbase.</h3>
-          <Man className='absolute bottom-5 right-1 ' />
+          <Man className='w-[9rem] absolute bottom-5 right-1 ' />
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>
             Transfer data and value cross-chain.
           </h3>
-          <Man className='absolute bottom-5 right-1 ' />
+          <Astro className='w-[9rem] absolute bottom-5 right-1 ' />
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>
             Expand your community across new networks.
+            {/* Transfer data and value cross-chain. */}
           </h3>
-          <Man className='absolute bottom-5 right-1 ' />
+          <Cpu className='w-[12rem] absolute bottom-5 right-1 ' />
         </motion.div>
       </motion.div>
     </motion.div>
