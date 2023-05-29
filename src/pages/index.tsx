@@ -56,13 +56,12 @@ export default function Home(props: any) {
     <>
       <Hero />
       <LogoCloud />
-      <ProtocolHistory />
+      {/* <ProtocolHistory /> */}
       <ProductOverview />
-      {/* <MotionThrough /> */}
-      <CoreFeatures />
-      <BridgeDesign />
       <SlidingWords />
       <UseSygmaTo />
+      {/* <MotionThrough /> */}
+      <CoreFeatures />
       <BuildersProgram />
       {/* <Contact /> */}
       {/* <BlogTeaser posts={posts} /> */}

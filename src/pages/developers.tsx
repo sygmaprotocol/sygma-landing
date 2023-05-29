@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import DeveloperHero from '@/sections/DeveloperHero';
 import BlogGrid from '@/sections/BlogGrid';
+import BridgeDesign from '@/sections/BridgeDesign';
 
 export default function Developer(props: any) {
   const { posts } = props;
@@ -11,6 +12,7 @@ export default function Developer(props: any) {
     // <HubspotProvider>
     <>
       <DeveloperHero />
+      <BridgeDesign />
       <Footer />
     </>
     // </HubspotProvider>

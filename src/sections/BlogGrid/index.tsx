@@ -1,11 +1,15 @@
-import { getAllPosts } from '@/ghost-client';
-
-export default function BlogGrid() {
-  const posts = getAllPosts();
-  console.log(posts);
+export default function BlogGrid(props: any) {
   return (
-    <>
-      <h1>Hello from blog grid</h1>
-    </>
+    <div>
+      {props.posts?.map((post: any) => (
+        <div className="mt-4" key={post.uuid}>
+          <h2>{post.title}</h2>
+          <p>{post.reading_time}min read</p>
+          <p>{post.primary_author.name}</p>
+          <p>{post.slug}</p>
+          <p>{post.id}</p>
+        </div>
+      ))}
+    </div>
   );
 }

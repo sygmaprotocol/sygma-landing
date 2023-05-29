@@ -1,14 +1,22 @@
 /** @type {import('next').NextConfig} */
+const fs = require("fs");
+
+const dotenv = require("dotenv");
+
+const env = dotenv.parse(fs.readFileSync(".env"));
+
 const nextConfig = {
   reactStrictMode: true,
-}
+  env: env,
+};
 
 module.exports = {
-  output: 'export',
+  output: "export",
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
-      rule.test?.test?.('.svg')
+      rule.test?.test?.(".svg")
     );
 
     config.module.rules.push(
@@ -23,7 +31,7 @@ module.exports = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
         resourceQuery: { not: /url/ }, // exclude if *.svg?url
-        use: ['@svgr/webpack'],
+        use: ["@svgr/webpack"],
       }
     );
 

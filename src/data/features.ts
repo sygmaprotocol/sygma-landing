@@ -1,10 +1,10 @@
-export interface ICoreFeature {
+export interface IProductFeature {
   title: string;
   desc?: string;
   status: string;
 }
 
-export const coreFeatures: ICoreFeature[] = [
+export const currentFeatures: IProductFeature[] = [
   {
     title: "Fees in any token",
     status: "Live on mainnet"
@@ -21,6 +21,9 @@ export const coreFeatures: ICoreFeature[] = [
     title: "Substrate asset support",
     status: "Live on mainnet"
   },
+]
+
+export const futureFeatures: IProductFeature[] = [
   {
     title: "Native EVM-XCM swaps",
     status: "In development"
@@ -29,6 +32,7 @@ export const coreFeatures: ICoreFeature[] = [
     title: "Competitive fees",
     status: "In development"
   },
+  
 ]
 
 export interface IDesignFeature {
