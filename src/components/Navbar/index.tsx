@@ -9,7 +9,7 @@ import {
   navbarDiscoverOptions,
   navbarProductCTA,
   navbarDeveloperCTA,
-} from '@/data/links';
+} from "@/data/navbar";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
