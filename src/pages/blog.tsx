@@ -2,7 +2,6 @@ import { getAllPosts } from "@/ghost-client";
 import BlogGrid from "@/sections/BlogGrid";
 
 import { GetStaticProps } from "next";
-import { PostsOrPages } from "@tryghost/content-api";
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = await getAllPosts();

@@ -1,5 +1,5 @@
 import React from 'react';
-import Man from '@/assets/men2.svg';
+import Man from "@/assets/men.svg";
 import Flower from "@/assets/flower.svg";
 import Astro from "@/assets/astro.svg";
 import { motion } from "framer-motion";

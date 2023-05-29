@@ -18,6 +18,7 @@ import BlogTeaser from '@/sections/BlogTeaser';
 import ProductOverview from '@/sections/ProductOverview';
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import type { Post } from '@/sections/BlogTeaser';
+import SocialBanner from "@/sections/SocialBanner";
 // import { getPosts } from '@/ghost-client';
 
 // get posts from ghost blog
@@ -47,27 +48,26 @@ const getPosts = async () => {
   return response.posts;
 };
 
-
-
 export default function Home(props: any) {
   const { posts } = props;
   return (
-    // <HubspotProvider>
-    <>
-      <Hero />
-      <LogoCloud />
-      {/* <ProtocolHistory /> */}
-      <ProductOverview />
-      <SlidingWords />
-      <UseSygmaTo />
-      {/* <MotionThrough /> */}
-      <CoreFeatures />
-      <BuildersProgram />
-      {/* <Contact /> */}
-      {/* <BlogTeaser posts={posts} /> */}
-      <CTA />
-      <Footer />
-    </>
-    // </HubspotProvider>
+    <HubspotProvider>
+      <>
+        <Hero />
+        <SocialBanner />
+        {/* <LogoCloud />
+        <ProtocolHistory />
+        <ProductOverview />
+        <SlidingWords />
+        <UseSygmaTo />
+        <MotionThrough />
+        <CoreFeatures />
+        <BuildersProgram />
+        <Contact /> */}
+        {/* <BlogTeaser posts={posts} /> */}
+        <CTA />
+        <Footer />
+      </>
+    </HubspotProvider>
   );
 }

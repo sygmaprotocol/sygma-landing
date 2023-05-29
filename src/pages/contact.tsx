@@ -7,11 +7,12 @@ import ContactLanding from '@/sections/ContactLanding';
 export default function Contact(props: any) {
   const { posts } = props;
   return (
-    // <HubspotProvider>
-    <>
-      <ContactLanding />
-      <Footer />
-    </>
-    // </HubspotProvider>
+    <HubspotProvider>
+      <>
+        <ContactLanding />
+        <Footer />
+      </>
+      //{" "}
+    </HubspotProvider>
   );
 }
