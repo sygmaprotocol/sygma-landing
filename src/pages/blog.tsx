@@ -1,5 +1,5 @@
 import { getAllPosts } from "@/ghost-client";
-import BlogGrid from "@/sections/BlogGrid";
+import BlogPosts from "@/sections/BlogPosts";
 
 import { GetStaticProps } from "next";
 
@@ -20,8 +20,7 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function Blog(props: any) {
   return (
     <>
-      <h1>Hello from blog grid</h1>
-      <BlogGrid posts={props.posts} />
+      <BlogPosts posts={props.posts} />
     </>
   );
 }

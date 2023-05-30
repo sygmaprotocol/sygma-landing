@@ -19,11 +19,6 @@ const socials = [
     imageUrl: "/socials/Linkedin.png",
     url: "https://www.linkedin.com/company/buildwithsygma",
   },
-  {
-    name: "Medium",
-    imageUrl: "/socials/Medium.png",
-    url: "https://medium.com/@buildwithsygma",
-  },
 ];
 
 export default function SocialBanner() {
