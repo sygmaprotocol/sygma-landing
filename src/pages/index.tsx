@@ -54,17 +54,16 @@ export default function Home(props: any) {
     <HubspotProvider>
       <>
         <Hero />
-        <SocialBanner />
-        {/* <LogoCloud />
-        <ProtocolHistory />
-        <ProductOverview />
+        <LogoCloud />
         <SlidingWords />
         <UseSygmaTo />
-        <MotionThrough />
-        <CoreFeatures />
         <BuildersProgram />
-        <Contact /> */}
-        {/* <BlogTeaser posts={posts} /> */}
+        {/* <MotionThrough /> */}
+        {/* <ProtocolHistory /> */}
+        <ProductOverview />
+        <CoreFeatures />
+        <SocialBanner />
+        <BlogTeaser posts={posts} />
         <CTA />
         <Footer />
       </>
