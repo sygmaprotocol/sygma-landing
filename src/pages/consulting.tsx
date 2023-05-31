@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import Hero from '@/sections/Hero';
-import Footer from '@/components/Footer';
+import Image from "next/image";
 import ConsultingHero from "@/sections/ConsultingHero";
 
 export default function Contact(props: any) {
