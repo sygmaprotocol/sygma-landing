@@ -7,45 +7,36 @@ import ProtocolHistory from '@/sections/ProtocolHistory';
 import CoreFeatures from '@/sections/CoreFeatures';
 import BridgeDesign from '@/sections/BridgeDesign';
 import InnerNav from '@/components/InnerNav';
-import CTA from '@/sections/CTA';
-import Contact from '@/sections/Contact';
-import SlidingWords from '@/sections/SlidingWords';
-import LogoCloud from '@/components/LogoCloud';
-import UseSygmaTo from '@/sections/UseSygmaTo';
-import BuildersProgram from '@/sections/BuildersProgram';
-import { MotionThrough } from '@/sections/MotionThrough';
-import BlogTeaser from '@/sections/BlogTeaser';
-import ProductOverview from '@/sections/ProductOverview';
-import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
-import type { Post } from '@/sections/BlogTeaser';
+import CTA from "@/sections/SubscribeNewsletter";
+import Contact from "@/sections/Contact";
+import SlidingWords from "@/sections/SlidingWords";
+import LogoCloud from "@/components/LogoCloud";
+import UseSygmaTo from "@/sections/DevJourney";
+import BuildersProgram from "@/sections/BuildersProgram";
+import { MotionThrough } from "@/sections/MotionThrough";
+import BlogTeaser from "@/sections/BlogTeaser";
+import ProductOverview from "@/sections/ProductOverview";
+import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 import SocialBanner from "@/sections/SocialBanner";
-// import { getPosts } from '@/ghost-client';
+import { getAllPosts } from "@/ghost-client";
+import Hero2 from "@/sections/Hero2";
+import DevFeature from "@/sections/DevFeature1";
+import DevFeature1 from "@/sections/DevFeature1";
+import DevFeature2 from "@/sections/DevFeature2";
+import DevJourney from "@/sections/DevJourney";
 
-// get posts from ghost blog
-export const getStaticProps = async (params: any) => {
-  const posts = await getPosts();
-  if (posts) {
-    const parsedPosts = JSON.parse(JSON.stringify(posts));
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = await getAllPosts();
+
+  if (!posts) {
     return {
-      props: {
-        posts: parsedPosts,
-      },
+      notFound: true,
     };
   }
+
   return {
-    props: {
-      posts: [],
-    },
+    props: { posts },
   };
-};
-
-const getPosts = async () => {
-  const response = await fetch(
-    `https://testing123.ghost.io/ghost/api/v3/content/posts/?key=${process.env.REACT_APP_GHOST_API_KEY}`
-  ).then((res) => res.json());
-  // console.log(response.posts);
-
-  return response.posts;
 };
 
 export default function Home(props: any) {
@@ -55,13 +46,16 @@ export default function Home(props: any) {
       <>
         <Hero />
         <LogoCloud />
-        <SlidingWords />
-        <UseSygmaTo />
-        <BuildersProgram />
+        <DevFeature2 />
+        <DevFeature1 />
+        <DevJourney />
+        {/* <SlidingWords /> */}
+        {/* <UseSygmaTo /> */}
         {/* <MotionThrough /> */}
         {/* <ProtocolHistory /> */}
-        <ProductOverview />
-        <CoreFeatures />
+        {/* <ProductOverview />
+        <CoreFeatures /> */}
+        <BuildersProgram />
         <SocialBanner />
         <BlogTeaser posts={posts} />
         <CTA />

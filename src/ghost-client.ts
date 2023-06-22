@@ -2,11 +2,9 @@ import GhostContentAPI, { Params, PostOrPage, SettingsResponse, Pagination, Post
 
 // Create API instance with site credentials
 
-const ghostUrl = 'https://testing123.ghost.io'
-const ghostKey = '91a22ddc444be4218587778571'
 const api = new GhostContentAPI({
-  url: ghostUrl,
-  key: ghostKey,
+  url: process.env.GHOST_URL || 'https://blog.buildwithsygma.com',
+  key: process.env.GHOST_KEY || '',
   version: "v5.0"
 });
 

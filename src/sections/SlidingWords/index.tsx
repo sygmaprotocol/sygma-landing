@@ -52,27 +52,29 @@ const SlidingWords = (props: Props) => {
   };
 
   return (
-    <div
+    <motion.div
+      style={{ opacity: fadeOut }}
       ref={targetRef}
-      className='bg-gray-900 flex py-24 sm:py-32 flex-col justify-center content-center relative'>
+      className="relative flex flex-col content-center justify-center bg-gray-900 py-24 sm:py-24"
+    >
       <motion.h1
         style={{ opacity: fadeOut }}
-        className='text-center text-4xl pb-10 font-medium text-warm-white'>
-        Take <span className='text-primary-100'>{text}</span> cross-chain.
+        className="pb-10 text-center text-4xl font-medium text-warm-white"
+      >
+        Take <span className="text-primary-100">{text}</span> cross-chain.
       </motion.h1>
-      <motion.div
-        style={{ opacity: fadeOut }}
-        className='grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center'>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center">
         {words.map((word, index) => (
           <Pill
             onMouseEnter={() => animateCurrentWord(index)}
             onMouseLeave={() => resetWord()}
-            key={index}>
+            key={index}
+          >
             {word.title}
           </Pill>
         ))}
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 };
 

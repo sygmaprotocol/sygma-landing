@@ -9,19 +9,42 @@ export default function BuildersProgram() {
             <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
               The builder's program
             </p>
-            <p className="my-6 text-lg leading-6 text-gray-600">
-              Our SDK is an abstraction layer on top of the Sygma protocol to
-              enable you to easily manage the flow of data and value across
-              networks.
+            <p className="my-3 leading-6 text-gray-600">
+              Sygma will enable you to harness the power of multiple
+              blockchains.
             </p>
-            <div>
-              <ExternalButton className="w-auto" type="secondary" href="#">
-                Apply
+            <p className="text-md my-2 leading-6 text-gray-600">
+              By joining our builder program, you can enjoy access to:{" "}
+            </p>
+            <ul className="my-2 text-gray-600">
+              <li className="text-md text-gray-600">✅ Funding </li>{" "}
+              <li className="text-md text-gray-600">✅ Engineering support</li>{" "}
+              <li className="text-md text-gray-600">✅ Marketing assistance</li>
+            </ul>
+            <p className="text-md my-2 leading-6 text-gray-600">
+              ...to ensure cross-chain becomes a major enabler and driver for
+              the success of your project. This will speed up your
+              time-to-market as well as the impact of your project.
+            </p>
+            <p className="text-md my-2 leading-6 text-gray-600">
+              We're offering this unique combination of monetary incentives and
+              technical support because we believe in the future of cross-chain.
+              Join us to get first access to Sygma releases and receive up to
+              $40,000 CAD in funding!
+            </p>
+
+            <div className="my-6">
+              <ExternalButton
+                className="mt-w-auto"
+                type="secondary"
+                href="/builders-program"
+              >
+                Apply Now
               </ExternalButton>
             </div>
           </div>
           <div className="col-span-1 grid grid-cols-1">
-            <img className="object-cover" src="/car.png" alt="" />
+            <img className="object-cover" src="/builder.png" alt="" />
           </div>
         </div>
       </div>

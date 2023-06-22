@@ -15,7 +15,7 @@ export default function ExternalButton({
 }: Props) {
   let styles;
   if (type === 'primary') {
-    styles = `transition-all rounded-xl bg-primary-100 px-3.5 py-2.5 text-md font-bold text-black shadow-sm hover:bg-primary-200 focus-visible:outline tracking-tight focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-200`;
+    styles = `transition-all rounded-xl bg-primary-100 px-3.5 py-2.5 text-md font-medium text-black shadow-sm hover:brightness-[90%] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-200`;
   } else if (type === 'secondary') {
     styles = `transition-all rounded-xl bg-gray-100 px-3.5 py-2.5 text-md font-medium text-black shadow-sm hover:bg-warm-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-200`;
   } else {

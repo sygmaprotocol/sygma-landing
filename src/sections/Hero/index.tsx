@@ -14,7 +14,7 @@ export default function Hero() {
               Sygma is now LIVE on mainnet.{" "}
             </div>
           </div>
-          <div className="text-center">
+          <div className="z-10 text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
               Fast, secure, and reliable cross-chain communication
             </h1>

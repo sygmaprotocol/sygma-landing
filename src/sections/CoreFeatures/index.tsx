@@ -9,7 +9,7 @@ import {
 
 export default function CoreFeatures() {
   return (
-    <div className="bg-white py-12 sm:py-24">
+    <div className="bg-white sm:py-24 lg:py-32">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
