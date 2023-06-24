@@ -5,17 +5,14 @@ import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import ContactLanding from '@/sections/ContactLanding';
 import CTA from "@/sections/SubscribeNewsletter";
 
-export default function Contact(props: any) {
-  const { posts } = props;
+export default function Contact() {
   return (
     <HubspotProvider>
       <>
         <ContactLanding />
         <CTA />
-
         <Footer />
       </>
-      //{" "}
     </HubspotProvider>
   );
 }

@@ -1,19 +1,12 @@
-import Image from "next/image";
+
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { Inter } from "next/font/google";
-import Hero from "@/sections/Hero";
 import Footer from "@/components/Footer";
-import ProtocolHistory from "@/sections/ProtocolHistory";
 import CoreFeatures from "@/sections/CoreFeatures";
-import BridgeDesign from "@/sections/BridgeDesign";
-import InnerNav from "@/components/InnerNav";
 import CTA from "@/sections/SubscribeNewsletter";
-import Contact from "@/sections/Contact";
 import SlidingWords from "@/sections/SlidingWords";
 import LogoCloud from "@/components/LogoCloud";
 import UseSygmaTo from "@/sections/DevJourney";
 import BuildersProgram from "@/sections/BuildersProgram";
-import { MotionThrough } from "@/sections/MotionThrough";
 import BlogTeaser from "@/sections/BlogTeaser";
 import ProductOverview from "@/sections/ProductOverview";
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
@@ -45,8 +38,6 @@ export default function Home(props: any) {
         <SlidingWords />
         <UseSygmaTo />
         <BuildersProgram />
-        {/* <MotionThrough /> */}
-        {/* <ProtocolHistory /> */}
         <ProductOverview />
         <CoreFeatures />
         <SocialBanner />

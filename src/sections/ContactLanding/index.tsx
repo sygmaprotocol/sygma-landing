@@ -3,6 +3,7 @@ import {
   CodeBracketIcon,
   HandRaisedIcon,
 } from "@heroicons/react/20/solid";
+import Link from 'next/link'
 
 const cards = [
   {
@@ -10,16 +11,19 @@ const cards = [
     description:
       "Hire the Sygma team to complete your cross-chain integration.",
     icon: CodeBracketIcon,
+    to: "/solutions"
   },
   {
     name: "General Inquiry/Partnerships",
     description: "Find out how your team can partner with Sygma.",
     icon: HandRaisedIcon,
+    to: "/contact"
   },
   {
     name: "Report a bug",
     description: "Give feedback or ask a question in our Discord",
     icon: BugAntIcon,
+    to: ""
   },
 ];
 
@@ -43,7 +47,8 @@ export default function ContactLanding() {
         </div>
         <div className="mt-25 mx-auto grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
           {cards.map((card) => (
-            <div
+            <Link
+              href=""
               key={card.name}
               className="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
             >
@@ -55,7 +60,7 @@ export default function ContactLanding() {
                 <h3 className="font-semibold text-white">{card.name}</h3>
                 <p className="mt-2 text-gray-300">{card.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

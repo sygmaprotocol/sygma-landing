@@ -1,10 +1,10 @@
-import GhostContentAPI, { Params, PostOrPage, SettingsResponse, Pagination, PostsOrPages, Tag, Author } from '@tryghost/content-api'
+import GhostContentAPI, {PostsOrPages} from '@tryghost/content-api'
 
 // Create API instance with site credentials
 
 const api = new GhostContentAPI({
-  url: process.env.GHOST_URL || 'https://blog.buildwithsygma.com',
-  key: process.env.GHOST_KEY || '',
+  url: process.env.GHOST_URL as string,
+  key: process.env.GHOST_KEY as string,
   version: "v5.0"
 });
 
