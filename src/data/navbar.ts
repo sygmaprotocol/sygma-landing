@@ -37,15 +37,9 @@ export const navbarProductOptions: MenuOption[] = [
     icon: Square3Stack3DIcon,
   },
   {
-    name: "Sygma Explorer",
-    description: "Monitor cross-chain transactions.",
-    href: "https://explorer.buildwithsygma.com/",
-    icon: ArrowsRightLeftIcon,
-  },
-  {
-    name: "Services",
+    name: "Solutions",
     description: "Engineering and research at your service.",
-    href: "/consulting",
+    href: "/solutions",
     icon: WrenchScrewdriverIcon,
   },
 ];
@@ -55,12 +49,6 @@ export const navbarProductCTA = [
 ];
 
 export const navbarDeveloperOptions: MenuOption[] = [
-  {
-    name: "Developer Resources",
-    description: "Start building on Sygma.",
-    href: "/developers",
-    icon: CommandLineIcon,
-  },
   {
     name: "Documentation",
     description: "View examples, guides and more.",
