@@ -15,7 +15,7 @@ export default function GiantButton({
 }: Props) {
   let styles;
   if (type === "primary") {
-    styles = `flex w-full transition-all rounded-2xl bg-warm-white brightness-[90%] px-5 py-8 text-lg font-medium text-black shadow-sm hover:brightness-[80%] cursor-pointer`;
+    styles = `flex w-full transition-all rounded-2xl bg-gray-100 brightness-[90%] px-5 py-8 text-lg font-medium text-black shadow-sm hover:brightness-[80%] cursor-pointer`;
   } else if (type === "secondary") {
     styles = `flex w-full transition-all rounded-2xl bg-gray-800 brightness-[90%] px-5 py-8 text-lg font-medium text-white shadow-sm hover:brightness-[80%] cursor-pointer`;
   } else {

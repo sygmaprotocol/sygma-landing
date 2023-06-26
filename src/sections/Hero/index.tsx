@@ -1,8 +1,18 @@
+
 import ExternalButton from '@/components/Button/ExternalButton';
+import InternalButton from '@/components/Button/InternalButton';
 import Navbar from '@/components/Navbar';
-import { useSpring } from 'framer-motion';
+import { useState } from 'react';
 
 export default function Hero() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const onCopy = () => {
+    navigator.clipboard.writeText('npm install @buildwithsygma/sygma-sdk-core')
+    setIsCopied(true);
+    setTimeout(() => {setIsCopied(false)}, 1500);
+  }
+
   return (
     <div className="bg-black">
       <Navbar />
@@ -19,16 +29,15 @@ export default function Hero() {
               Fast, secure, and reliable cross-chain communication
             </h1>
             <p className="mt-6 text-xl leading-8 text-gray-400">
-              Provide an any-to-any user experience with seamless connectivity
-              across EVM, Substrate, and beyond.
+              Seamlessly enabling users to harness the power of multiple blockchains through the ultimate SDK.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <ExternalButton href="/developers" type="primary">
+            <div className="mt-10 flex items-center justify-center gap-x-2">
+              <ExternalButton href="https://docs.buildwithsygma.com/sdk/introduction" type="primary">
                 Start Building
               </ExternalButton>
-              <ExternalButton href="/consulting" type="link">
-                Solutions <span aria-hidden="true">→</span>
-              </ExternalButton>
+              <InternalButton onClick={() => onCopy()} type="frosted">
+              {isCopied ? 'Copied!' : 'npm install @buildwithsygma/sygma-sdk-core'} 
+            </InternalButton>
             </div>
           </div>
         </div>

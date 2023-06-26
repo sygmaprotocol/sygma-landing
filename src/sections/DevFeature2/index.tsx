@@ -20,7 +20,7 @@ export default function DevFeature2() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-5xl">
-                Getting started with token transfers
+               Getting started with EVM to Substrate transfers
               </h1>
               <p className="my-6 text-lg leading-8 text-gray-300">
                 Sygma SDK tells you which parameters you need to send

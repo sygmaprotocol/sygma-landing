@@ -53,13 +53,12 @@ const SlidingWords = (props: Props) => {
 
   return (
     <motion.div
-      style={{ opacity: fadeOut }}
       ref={targetRef}
-      className="relative flex flex-col content-center justify-center bg-gray-900 py-24 sm:py-24"
+      className="relative flex flex-col content-center justify-center bg-gradient-to-r from-gray-100 from-0% via-gray-200 via-50% to-[#f1a981] to-100% py-24 sm:py-24"
     >
       <motion.h1
         style={{ opacity: fadeOut }}
-        className="pb-10 text-center text-4xl font-medium text-warm-white"
+        className="pb-10 text-center text-4xl font-medium text-black z-40"
       >
         Take <span className="text-primary-100">{text}</span> cross-chain.
       </motion.h1>
@@ -74,6 +73,7 @@ const SlidingWords = (props: Props) => {
           </Pill>
         ))}
       </div>
+
     </motion.div>
   );
 };

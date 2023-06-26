@@ -12,6 +12,7 @@ import { getAllPosts } from "@/ghost-client";
 import DevFeature1 from "@/sections/DevFeature1";
 import DevFeature2 from "@/sections/DevFeature2";
 import DevJourney from "@/sections/DevJourney";
+import SlidingWords from '@/sections/SlidingWords';
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = await getAllPosts();
@@ -36,6 +37,7 @@ export default function Home(props: any) {
         <LogoCloud />
         <DevFeature2 />
         <DevFeature1 />
+        <SlidingWords />
         <DevJourney />
         <BuildersProgram />
         <SocialBanner />
