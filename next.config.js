@@ -31,7 +31,7 @@ module.exports = {
     return config;
   },
   env: {
-    ghostKey: process.env.GHOST_KEY,
+    ghostKey: process.env.NEXT_PUBLIC_GHOST_KEY,
     ghostUrl: process.env.GHOST_URL,
   },
   reactStrictMode: true,
