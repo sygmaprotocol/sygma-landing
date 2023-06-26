@@ -4,7 +4,6 @@ import FormPageTemplate from "@/sections/FormPageTemplate";
 import SlidingWords from "@/sections/SlidingWords";
 import SolutionsHero from "@/sections/SolutionsHero";
 import SubscribeNewsletter from "@/sections/SubscribeNewsletter";
-import UseSygmaTo from "@/sections/useSygmaTo";
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 
 export default function solutions(props: any) {
