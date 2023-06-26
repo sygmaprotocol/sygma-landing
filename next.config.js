@@ -1,14 +1,4 @@
 /** @type {import('next').NextConfig} */
-const fs = require("fs");
-
-const dotenv = require("dotenv");
-
-const env = dotenv.parse(fs.readFileSync(".env"));
-
-const nextConfig = {
-  reactStrictMode: true,
-  env: env,
-};
 
 module.exports = {
   output: "export",
@@ -40,5 +30,9 @@ module.exports = {
 
     return config;
   },
-  nextConfig,
+  env: {
+    ghostKey: process.env.GHOST_KEY,
+    ghostUrl: process.env.GHOST_URL,
+  },
+  reactStrictMode: true,
 };
