@@ -25,7 +25,7 @@ export default function BuildersProgram() {
             <p className="text-md my-2 leading-6 text-gray-600">
               We're offering this unique combination of monetary incentives and
               tech support because we believe in an interoperable future. Join
-              us and receive up to $30,000 USD in funding!”
+              us and receive up to $30,000 USD in funding!
             </p>
 
             <div className="my-6">

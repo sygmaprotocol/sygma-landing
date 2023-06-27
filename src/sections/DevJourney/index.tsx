@@ -42,7 +42,12 @@ const DevJourney = (props: Props) => {
           <InternalButton onClick={() => onCopy()} type="primary">
             {isCopied ? "Copied!" : "yarn add @sygma-sdk"}
           </InternalButton>
-          <ExternalButton type="secondary">Github Repo</ExternalButton>
+          <ExternalButton
+            href="https://github.com/sygmaprotocol"
+            type="secondary"
+          >
+            Github Repo
+          </ExternalButton>
         </div>
       </motion.div>
       <motion.div

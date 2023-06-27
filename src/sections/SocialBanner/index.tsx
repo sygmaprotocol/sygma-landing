@@ -44,6 +44,8 @@ export default function SocialBanner() {
             <a
               key={social.name}
               href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="brightness-100 hover:brightness-75"
             >
               <img

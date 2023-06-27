@@ -57,9 +57,7 @@ export default function CoreFeatures() {
                     )}
                     {feature.title}
                   </dt>
-                  <dd
-                    className={`mt-2 w-[150px] rounded-full ${feature.status} === 'Live on mainnet' ?bg-green-100 : bg-slate-100 px-4 py-1`}
-                  >
+                  <dd className="mt-2 w-[150px] rounded-full bg-slate-100 px-4 py-1">
                     {feature.status}
                   </dd>
                 </motion.div>

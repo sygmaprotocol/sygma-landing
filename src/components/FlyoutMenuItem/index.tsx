@@ -124,7 +124,7 @@ export default function FlyoutMenuItem({
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-md  flex items-center justify-center gap-x-2.5 p-3 font-semibold tracking-tight  text-gray-100 hover:text-opacity-75"
+                        className="text-md flex items-center justify-center gap-x-2.5 p-3  text-gray-100 hover:text-opacity-75"
                       >
                         <item.icon
                           className="h-5 w-5 flex-none text-primary-200 "
