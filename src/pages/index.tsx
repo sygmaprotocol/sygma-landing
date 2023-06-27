@@ -15,22 +15,22 @@ import SlidingWords from "@/sections/SlidingWords";
 import CoreFeatures from "@/sections/CoreFeatures";
 import BlogTeaser from "@/sections/BlogTeaser";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const posts = await getAllPosts();
+// export const getStaticProps: GetStaticProps = async () => {
+//   const posts = await getAllPosts();
 
-  if (!posts) {
-    return {
-      notFound: true,
-    };
-  }
+//   if (!posts) {
+//     return {
+//       notFound: true,
+//     };
+//   }
 
-  return {
-    props: { posts },
-  };
-};
+//   return {
+//     props: { posts },
+//   };
+// };
 
 export default function Home(props: any) {
-  const { posts } = props;
+  // const { posts } = props;
   return (
     <HubspotProvider>
       <>
@@ -60,7 +60,7 @@ export default function Home(props: any) {
         <BuildersProgram />
         <SocialBanner />
         <CTA />
-        <BlogTeaser posts={posts} />
+        {/* <BlogTeaser posts={posts} /> */}
         <Footer />
       </>
     </HubspotProvider>
