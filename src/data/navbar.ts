@@ -29,12 +29,6 @@ export type CTA = {
 
 export const navbarProductOptions: MenuOption[] = [
   {
-    name: "Sygma SDK",
-    description: "Build cross-chain dapps.",
-    href: "https://github.com/sygmaprotocol/sygma-sdk",
-    icon: Square3Stack3DIcon,
-  },
-  {
     name: "Solutions",
     description: "Engineering and research at your service.",
     href: "/solutions",
@@ -47,6 +41,12 @@ export const navbarProductCTA = [
 ];
 
 export const navbarDeveloperOptions: MenuOption[] = [
+  {
+    name: "Sygma SDK",
+    description: "Build cross-chain dapps.",
+    href: "https://github.com/sygmaprotocol/sygma-sdk",
+    icon: Square3Stack3DIcon,
+  },
   {
     name: "Documentation",
     description: "View examples, guides and more.",
