@@ -46,13 +46,13 @@ export default function DevFeature2() {
             </video>
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
               <GiantButton
-                href="https://docs.buildwithsygma.com/environments/"
+                href="https://transfer-ui.test.buildwithsygma.com/transfer"
                 type="primary"
               >
                 Fungible Token Transfer Demo (UI)
               </GiantButton>
               <GiantButton
-                href="https://docs.buildwithsygma.com/environments/"
+                href="https://transfer-ui.test.buildwithsygma.com/transfer"
                 type="primary"
               >
                 NFT Transfer Demo (UI){" "}
