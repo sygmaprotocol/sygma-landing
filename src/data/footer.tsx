@@ -19,8 +19,9 @@ export const footerLinks = {
     { name: "Contact", href: "/contact" },
   ],
   resources: [
-    { name: "Brand Assets", href: "" },
+    { name: "Brand Assets", href: "sygma_logo.zip" },
     { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms and Conditions", href: "/terms" },
   ],
   socials: [
     {
