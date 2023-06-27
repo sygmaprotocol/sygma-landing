@@ -31,12 +31,32 @@ export default function DevFeature2() {
               <source src="highlight.mp4" type="video/mp4" />
             </video>
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
-              <GiantButton type="primary">Fungible Token Example</GiantButton>
-              <GiantButton type="primary">NFT Example </GiantButton>
+              <GiantButton
+                href="https://docs.buildwithsygma.com/environments/"
+                type="primary"
+              >
+                Fungible Token Transfer Demo (UI)
+              </GiantButton>
+              <GiantButton
+                href="https://docs.buildwithsygma.com/environments/"
+                type="primary"
+              >
+                NFT Transfer Demo (UI){" "}
+              </GiantButton>
             </div>
             <div className="mx-auto mt-2  flex max-w-4xl justify-between gap-2">
-              <GiantButton type="secondary">Intro to transfers </GiantButton>
-              <GiantButton type="secondary">Guide in docs </GiantButton>
+              <GiantButton
+                href="https://docs.buildwithsygma.com/sdk/examples/substrate-evm-example"
+                type="secondary"
+              >
+                Sending Substrate Transfers (CLI){" "}
+              </GiantButton>
+              <GiantButton
+                type="secondary"
+                href="https://docs.buildwithsygma.com/sdk/examples/node-js-example"
+              >
+                Sending EVM Transfers (CLI){" "}
+              </GiantButton>
             </div>
           </div>
         </div>

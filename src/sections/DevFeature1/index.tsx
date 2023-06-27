@@ -19,8 +19,18 @@ export default function DevFeature1() {
               <source src="highlight.mp4" type="video/mp4" />
             </video>
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
-              <GiantButton type="primary">Read Docs</GiantButton>
-              <GiantButton type="primary">Video Demo</GiantButton>
+              <GiantButton
+                href="https://docs.buildwithsygma.com/sdk/quickstart/gmp"
+                type="primary"
+              >
+                Read Quick-Start Guide
+              </GiantButton>
+              <GiantButton
+                href="https://docs.buildwithsygma.com/architecture"
+                type="primary"
+              >
+                View Network Architecture
+              </GiantButton>
             </div>
           </div>
         </div>

@@ -15,22 +15,22 @@ import DevJourney from "@/sections/DevJourney";
 import SlidingWords from '@/sections/SlidingWords';
 import CoreFeatures from "@/sections/CoreFeatures";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const posts = await getAllPosts();
+// export const getStaticProps: GetStaticProps = async () => {
+//   const posts = await getAllPosts();
 
-  if (!posts) {
-    return {
-      notFound: true,
-    };
-  }
+//   if (!posts) {
+//     return {
+//       notFound: true,
+//     };
+//   }
 
-  return {
-    props: { posts },
-  };
-};
+//   return {
+//     props: { posts },
+//   };
+// };
 
 export default function Home(props: any) {
-  const { posts } = props;
+  // const { posts } = props;
   return (
     <HubspotProvider>
       <>
@@ -43,7 +43,7 @@ export default function Home(props: any) {
         <CoreFeatures />
         <BuildersProgram />
         <SocialBanner />
-        <BlogTeaser posts={posts} />
+        {/* <BlogTeaser posts={posts} /> */}
         <CTA />
         <Footer />
       </>
