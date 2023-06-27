@@ -27,7 +27,7 @@ export default function solutions(props: any) {
         desc="Reach out for integration support and customizing cross-chain messaging into your exsting dapp or protocol."
         targetName="#solutions"
       />
-      <ProtocolHistory />
+      {/* <ProtocolHistory /> */}
 
       <SubscribeNewsletter />
       <Footer />
