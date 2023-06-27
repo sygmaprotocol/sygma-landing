@@ -16,7 +16,7 @@ export default function DevFeature1() {
               </p>
             </div>
             <video autoPlay muted loop className="mx-auto lg:max-w-4xl">
-              <source src="highlight.mp4" type="video/mp4" />
+              <source src="data.mp4" type="video/mp4" />
             </video>
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
               <GiantButton

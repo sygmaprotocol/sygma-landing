@@ -24,6 +24,7 @@ const DevJourney = (props: Props) => {
     }, 1500);
   };
 
+  const terminalStyles = `"mx-auto my-3 max-w-[100%] rounded-xl shadow-xl`;
   return (
     <motion.div
       initial="offscreen"
@@ -59,31 +60,19 @@ const DevJourney = (props: Props) => {
       >
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>Step 1: Install SDK </h3>
-          <img
-            src="/Terminal.png"
-            alt=""
-            className="mx-auto my-3 max-w-[100%]"
-          />
+          <img src="/step1.gif" alt="" className={terminalStyles} />
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>
             Step 2. Build on local or testnet
           </h3>
-          <img
-            src="/Terminal.png"
-            alt=""
-            className="mx-auto my-3 max-w-[100%]"
-          />
+          <img src="/step2.gif" alt="" className={terminalStyles} />
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>
             Step 3. Send your first cross-chain call.
           </h3>
-          <img
-            src="/Terminal.png"
-            alt=""
-            className="mx-auto my-3 max-w-[100%]"
-          />
+          <img src="/step3.gif" alt="" className={terminalStyles} />
         </motion.div>
       </motion.div>
     </motion.div>

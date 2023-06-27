@@ -3,22 +3,23 @@ import { useHubspotForm } from "@aaronhayes/react-use-hubspot-form";
 export default function FormTemplateFull() {
   const { loaded, error, formCreated } = useHubspotForm({
     portalId: "39701769",
-    formId: "6edc166e-9a3c-4b26-a733-c4ab149b5275",
+    formId: "0126779e-c437-4c5d-b478-60e0e16b4341",
     target: "#newsletter-subscribe-input",
   });
 
   return (
     <div
-      className="relative h-[80vh] isolate overflow-hidden bg-gray-200"
+      className="relative isolate min-h-[80vh] overflow-hidden bg-gray-200"
       id="#integrations"
     >
-      <div className="mt-14 lg:mt-12 sm:px-6 sm:py-32 lg:px-8">
+      <div className="mt-14 sm:px-6 sm:py-32 lg:mt-12 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            The first revshare program for cross-chain builders.
+            Announcing Sygma's Contributor Program
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-6 text-gray-700">
-            If you're a blockchain or app developer who is interested in royalties for building interoperability primitives, sign up below.
+            If you're a blockchain or app developer who is interested in
+            royalties for building interoperability primitives, sign up below.
           </p>
           {/* Newsletter subscription input */}
           <div className="mt-4 flex items-center justify-center gap-x-6">
