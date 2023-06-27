@@ -1,18 +1,16 @@
-import Image from 'next/image'
-import { GetStaticProps } from 'next';
-import Hero from '@/sections/Hero';
-import Footer from '@/components/Footer';
+import Head from "next/head";
+import Hero from "@/sections/Hero";
+import Footer from "@/components/Footer";
 import CTA from "@/sections/SubscribeNewsletter";
 import LogoCloud from "@/components/LogoCloud";
 import BuildersProgram from "@/sections/BuildersProgram";
-import BlogTeaser from "@/sections/BlogTeaser"
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 import SocialBanner from "@/sections/SocialBanner";
 import { getAllPosts } from "@/ghost-client";
 import DevFeature1 from "@/sections/DevFeature1";
 import DevFeature2 from "@/sections/DevFeature2";
 import DevJourney from "@/sections/DevJourney";
-import SlidingWords from '@/sections/SlidingWords';
+import SlidingWords from "@/sections/SlidingWords";
 import CoreFeatures from "@/sections/CoreFeatures";
 
 // export const getStaticProps: GetStaticProps = async () => {
@@ -34,6 +32,22 @@ export default function Home(props: any) {
   return (
     <HubspotProvider>
       <>
+        <Head>
+          <title>
+            The interoperability layer for building cross-blockchain
+            applications | Sygma
+          </title>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+          <meta
+            name="descsription"
+            content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
+            for seamless communication across EVM, Substrate, Cosmos and more."
+          />
+        </Head>
         <Hero />
         <LogoCloud />
         <DevFeature2 />

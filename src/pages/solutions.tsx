@@ -4,10 +4,21 @@ import ProtocolHistory from "@/sections/ProtocolHistory";
 import SolutionsHero from "@/sections/SolutionsHero";
 import SubscribeNewsletter from "@/sections/SubscribeNewsletter";
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
+import Head from "next/head";
 
 export default function solutions(props: any) {
   return (
     <HubspotProvider>
+      <Head>
+        <title>Custom Cross-Chain Solutions | Sygma</title>
+        <meta
+          name="description"
+          content="Consult Sygma for tailored cross-chain solutions, leveraging our
+          expertise to build innovative applications and unlock the power of
+          cross-chain connectivity."
+        />
+        <desc></desc>
+      </Head>
       <SolutionsHero />
       <FormPageTemplate
         hsPortalId="39701769"

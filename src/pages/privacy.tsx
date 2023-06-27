@@ -1,9 +1,15 @@
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-} from "@heroicons/react/20/solid";
+import Head from "next/head";
 
 export default function Privacy() {
+  <Head>
+    <title>Privacy Policy | Sygma</title>
+
+    <meta
+      name="description"
+      content="Learn how Sygma protects your data and respects your privacy. Read our
+      comprehensive policy."
+    />
+  </Head>;
   return (
     <div className="bg-white px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">

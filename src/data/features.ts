@@ -21,15 +21,15 @@ export const currentFeatures: IProductFeature[] = [
     title: "Substrate asset support",
     status: "Live on mainnet"
   },
+  {
+    title: "Competitive fees",
+    status: "Live on mainnet"
+  },
 ]
 
 export const futureFeatures: IProductFeature[] = [
   {
     title: "Native EVM-XCM swaps",
-    status: "In development"
-  },
-  {
-    title: "Competitive fees",
     status: "In development"
   },
   
