@@ -20,14 +20,14 @@ export default function DevFeature2() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-5xl">
-               Getting started with EVM to Substrate transfers
+                Getting started with EVM to Substrate transfers
               </h1>
               <p className="my-6 text-lg leading-8 text-gray-300">
                 Sygma SDK tells you which parameters you need to send
                 transactions between Polkadot, Ethereum and more.
               </p>
             </div>
-            <video autoPlay muted loop className="mx-auto max-w-4xl">
+            <video autoPlay muted loop className="mx-auto lg:max-w-4xl">
               <source src="highlight.mp4" type="video/mp4" />
             </video>
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">

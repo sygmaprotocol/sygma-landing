@@ -1,13 +1,11 @@
 import { PhoneIcon } from "@heroicons/react/20/solid";
 import {
   BookOpenIcon,
-  CommandLineIcon,
   Square3Stack3DIcon,
   WrenchScrewdriverIcon,
   WrenchIcon,
   ChatBubbleLeftEllipsisIcon,
   CursorArrowRaysIcon,
-  ArrowsRightLeftIcon,
 } from "@heroicons/react/24/outline";
 
 export type FooterLink = {
@@ -45,7 +43,7 @@ export const navbarProductOptions: MenuOption[] = [
 ];
 
 export const navbarProductCTA = [
-  { name: "Contact", href: "#", icon: PhoneIcon },
+  { name: "Contact", href: "/general-inquiry", icon: PhoneIcon },
 ];
 
 export const navbarDeveloperOptions: MenuOption[] = [
@@ -64,7 +62,7 @@ export const navbarDeveloperOptions: MenuOption[] = [
 ];
 
 export const navbarDeveloperCTA = [
-  { name: "Apply to Builder's Program Cohort 1", href: "/builders-program", icon: WrenchIcon },
+  { name: "Apply to Builder's Program", href: "/builders", icon: WrenchIcon },
 ];
 
 export const navbarDiscoverOptions: MenuOption[] = [

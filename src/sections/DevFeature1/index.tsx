@@ -11,17 +11,16 @@ export default function DevFeature1() {
                 Say hello to native interoperability.
               </h1>
               <p className="my-6 text-lg leading-8 text-gray-700">
-                Easily integrate the Sygma SDK and send data cross-chain with a click of a button.
+                Easily integrate the Sygma SDK and send data cross-chain with a
+                click of a button.
               </p>
             </div>
-            <video autoPlay muted loop className="mx-auto max-w-4xl">
+            <video autoPlay muted loop className="mx-auto lg:max-w-4xl">
               <source src="highlight.mp4" type="video/mp4" />
             </video>
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
-              <GiantButton type="primary">
-                Message Passing Tutorial{" "}
-              </GiantButton>
-              <GiantButton type="primary">Demo at Polkadot Decoded</GiantButton>
+              <GiantButton type="primary">Read Docs</GiantButton>
+              <GiantButton type="primary">Video Demo</GiantButton>
             </div>
           </div>
         </div>
