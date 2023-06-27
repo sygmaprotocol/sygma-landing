@@ -23,7 +23,7 @@ export default function solutions(props: any) {
       {/* <ProtocolHistory /> */}
       <FormPageTemplate
         hsPortalId="39701769"
-        hsFormId="f0ee17fe-2445-49c5-be1e-32999a97563b"
+        hsFormId="2b8f93ff-268a-4a9e-85d3-a146938c2c4a"
         title="Sygma Solutions"
         desc="Reach out for integration support and customizing cross-chain messaging into your exsting dapp or protocol."
         targetName="#solutions"
