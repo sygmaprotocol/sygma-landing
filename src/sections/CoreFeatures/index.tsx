@@ -9,7 +9,7 @@ import {
 
 export default function CoreFeatures() {
   return (
-    <div className="bg-white sm:py-24 lg:py-32">
+    <div className="bg-white py-24 lg:py-32">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -44,38 +44,22 @@ export default function CoreFeatures() {
                   className="relative pl-7"
                 >
                   <dt className="font-semibold text-gray-900">
-                    <CheckCircleIcon
-                      className="absolute left-0 top-1 h-5 w-5 text-green-500"
-                      aria-hidden="true"
-                    />
+                    {feature.status === "Live on mainnet" ? (
+                      <CheckCircleIcon
+                        className="absolute left-0 top-1 h-5 w-5 text-green-500"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <WrenchIcon
+                        className="absolute left-0 top-1 h-5 w-5 text-gray-700"
+                        aria-hidden="true"
+                      />
+                    )}
                     {feature.title}
                   </dt>
-                  <dd className="mt-2 w-[150px] rounded-full bg-green-100 px-4 py-1">
-                    {feature.status}
-                  </dd>
-                </motion.div>
-              ))}
-            </motion.dl>
-            <motion.dl
-              variants={parentVariant}
-              initial="offscreen"
-              whileInView="onscreen"
-              className="col-span-1 grid grid-cols-1 gap-x-8 gap-y-7 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mt-10 lg:gap-x-0 lg:gap-y-10"
-            >
-              {futureFeatures.map((feature) => (
-                <motion.div
-                  variants={childVariants}
-                  key={feature.title}
-                  className="relative pl-7"
-                >
-                  <dt className="font-semibold text-gray-900">
-                    <WrenchIcon
-                      className="absolute left-0 top-1 h-5 w-5 text-gray-700"
-                      aria-hidden="true"
-                    />
-                    {feature.title}
-                  </dt>
-                  <dd className="mt-2 w-[150px] rounded-full bg-slate-100 px-4 py-1">
+                  <dd
+                    className={`mt-2 w-[150px] rounded-full ${feature.status} === 'Live on mainnet' ?bg-green-100 : bg-slate-100 px-4 py-1`}
+                  >
                     {feature.status}
                   </dd>
                 </motion.div>

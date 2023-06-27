@@ -1,7 +1,7 @@
 export interface IProductFeature {
   title: string;
   desc?: string;
-  status: string;
+  status: "Live on mainnet" | "In development";
 }
 
 export const currentFeatures: IProductFeature[] = [
@@ -24,6 +24,10 @@ export const currentFeatures: IProductFeature[] = [
   {
     title: "Competitive fees",
     status: "Live on mainnet"
+  },
+    {
+    title: "Native EVM-XCM swaps",
+    status: "In development"
   },
 ]
 

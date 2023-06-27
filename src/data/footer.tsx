@@ -1,10 +1,9 @@
 export const footerLinks = {
   product: [
     { name: "SDK", href: "https://github.com/sygmaprotocol/sygma-sdk" },
-    // { name: "Explorer", href: "https://explorer.buildwithsygma.com/" },
     {
-      name: "Consulting",
-      href: "/consulting",
+      name: "Solutions",
+      href: "/solutions",
     },
   ],
   developers: [
@@ -16,7 +15,7 @@ export const footerLinks = {
     },
   ],
   discover: [
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "https://docs.buildwithsygma.com/" },
     { name: "Contact", href: "/contact" },
   ],
   resources: [
@@ -56,7 +55,7 @@ export const footerLinks = {
     },
     {
       name: "Github",
-      href: "https://docs.buildwithsygma.com/github-repositories/",
+      href: "https://github.com/sygmaprotocol",
       icon: (props: any) => (
         <svg
           role="img"

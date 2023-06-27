@@ -33,9 +33,7 @@ export default function FormPageTemplate({
             <h1 className="text-4xl font-bold tracking-tight text-black">
               {title}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-900">
-             {desc}
-            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-900">{desc}</p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-900">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -48,7 +46,7 @@ export default function FormPageTemplate({
                 <dd>
                   Based in the following timezones:
                   <br />
-                  Berlin (GMT+3)
+                  Berlin (GMT+2)
                   <br />
                   Toronto (EST)
                 </dd>
