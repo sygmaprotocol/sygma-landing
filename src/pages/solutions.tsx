@@ -17,10 +17,8 @@ export default function solutions(props: any) {
           expertise to build innovative applications and unlock the power of
           cross-chain connectivity."
         />
-        <desc></desc>
       </Head>
       <SolutionsHero />
-      {/* <ProtocolHistory /> */}
       <FormPageTemplate
         hsPortalId="39701769"
         hsFormId="2b8f93ff-268a-4a9e-85d3-a146938c2c4a"
