@@ -31,8 +31,9 @@ export default function Hero() {
               Fast, secure, and reliable cross-chain communication
             </h1>
             <p className="mt-6 text-xl leading-8 text-gray-400">
-              Seamlessly enabling users to harness the power of multiple
-              blockchains through the ultimate SDK.
+              Sygma is a modular, open-source, cross-chain connectivity
+              protocol. With Sygma, developers can easily extend their
+              applications across EVM, Substrate, and beyond.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-x-2 gap-y-4 md:flex-row">
               <ExternalButton

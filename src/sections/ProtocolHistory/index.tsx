@@ -28,17 +28,17 @@ export default function ProtocolHistory() {
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                Audited and working with the best engineering teams to bring
-                blockchain interoperability to life.
+                Audited and supported by industry leaders.
               </h1>
               <div className="max-w-xl">
                 <p className="mt-3 leading-6 text-gray-400">
-                  Sygma is consulting{" "}
+                  To bring our vision for blockchain interoperability to life,
+                  Sygma is consulting with{" "}
                   <a href="https://chainsafe.io" target="__blank">
                     {" "}
                     ChainSafe
                   </a>
-                  , a leading blockchain R&D firm.
+                  , a leading blockchain R&D firm
                 </p>
               </div>
             </div>

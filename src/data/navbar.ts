@@ -69,7 +69,7 @@ export const navbarDiscoverOptions: MenuOption[] = [
   {
     name: "Blog",
     description: "Stay up to date with Sygma.",
-    href: "/blog",
+    href: "https://blog.buildwithsygma.com/",
     icon: CursorArrowRaysIcon,
   },
   {

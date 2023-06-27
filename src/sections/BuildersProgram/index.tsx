@@ -10,27 +10,22 @@ export default function BuildersProgram() {
               The builder's program
             </p>
             <p className="my-3 leading-6 text-gray-600">
-              Sygma will enable you to harness the power of multiple
-              blockchains.
-            </p>
-            <p className="text-md my-2 leading-6 text-gray-600">
-              By joining our builder program, you can enjoy access to:{" "}
+              Sygma simplifies the process of cross-chain deployments and makes
+              it possible to leverage the power of multiple blockchains. By
+              joining our builder program, you can enjoy access to
             </p>
             <ul className="my-2 text-gray-600">
-              <li className="text-md text-gray-600">✅ Funding </li>{" "}
+              <li className="text-md text-gray-600">✅ Additional funding </li>{" "}
               <li className="text-md text-gray-600">✅ Engineering support</li>{" "}
-              <li className="text-md text-gray-600">✅ Marketing assistance</li>
+              <li className="text-md text-gray-600">
+                ✅ Marketing collaboration
+              </li>
             </ul>
-            <p className="text-md my-2 leading-6 text-gray-600">
-              ...to ensure cross-chain becomes a major enabler and driver for
-              the success of your project. This will speed up your
-              time-to-market as well as the impact of your project.
-            </p>
+
             <p className="text-md my-2 leading-6 text-gray-600">
               We're offering this unique combination of monetary incentives and
-              technical support because we believe in the future of cross-chain.
-              Join us to get first access to Sygma releases and receive up to
-              $40,000 CAD in funding!
+              tech support because we believe in an interoperable future. Join
+              us and receive up to $30,000 USD in funding!”
             </p>
 
             <div className="my-6">

@@ -11,11 +11,11 @@ export const footerLinks = {
     { name: "Builder's Program", href: "/builders" },
     {
       name: "Github",
-      href: "https://docs.buildwithsygma.com/github-repositoriess",
+      href: "https://github.com/sygmaprotocol",
     },
   ],
   discover: [
-    { name: "Blog", href: "https://docs.buildwithsygma.com/" },
+    { name: "Blog", href: "https://blog.buildwithsygma.com/" },
     { name: "Contact", href: "/contact" },
   ],
   resources: [

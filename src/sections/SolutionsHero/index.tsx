@@ -10,13 +10,13 @@ export default function SolutionsHero() {
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-32">
           <div className="z-10 text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-              Integrate, Customize, Interop.
+              Integrate, Customize,{" "}
+              <span className="text-primary-100">Interop.</span>
             </h1>
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center my-8">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-primary-100">
-              Sygma offers solution support for protocols wanting to go cross-chain.
-            </div>
-          </div>
+            <p className="mt-6 text-xl leading-8 text-gray-400">
+              Sygma offers solution support for protocols wanting to go
+              cross-chain.
+            </p>
           </div>
         </div>
       </div>
