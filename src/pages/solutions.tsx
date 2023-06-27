@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import FormPageTemplate from "@/sections/FormPageTemplate";
+import ProtocolHistory from "@/sections/ProtocolHistory";
 import SolutionsHero from "@/sections/SolutionsHero";
 import SubscribeNewsletter from "@/sections/SubscribeNewsletter";
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
@@ -15,6 +16,7 @@ export default function solutions(props: any) {
         desc="Reach out for integration support and customizing cross-chain messaging into your exsting dapp or protocol."
         targetName="#solutions"
       />
+      <ProtocolHistory />
 
       <SubscribeNewsletter />
       <Footer />

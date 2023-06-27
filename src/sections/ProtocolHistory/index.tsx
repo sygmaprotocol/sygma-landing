@@ -1,8 +1,14 @@
-import ExternalButton from '@/components/Button/ExternalButton';
-
 const stats = [
-  { label: "Peak (1M) volume", value: "$600M" },
-  { label: "# of Audits", value: "3" },
+  {
+    label: "Sept 2022",
+    value: "Kalos Audit",
+    link: "https://docs.buildwithsygma.com/assets/files/[HAECHI%20AUDIT]%20Sygma%20Audit%20Report%20v1.1-de7e5ddc24ae14083880789f69f83640.pdf",
+  },
+  {
+    label: "May 2023",
+    value: "Least Authority Audit",
+    link: "https://docs.buildwithsygma.com/assets/files/least-authority-17-05-2023-a4c57b963354b382b6bea3c94cd30fc1.pdf",
+  },
 ];
 
 export default function ProtocolHistory() {
@@ -22,24 +28,36 @@ export default function ProtocolHistory() {
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                Harness the power of multiple blockchains.
+                Audited and working with the best engineering teams to bring
+                blockchain interoperability to life.
               </h1>
               <div className="max-w-xl">
                 <p className="mt-3 leading-6 text-gray-400">
-                  Built on the technology that has transferred over $600 million
-                  in assets across top blockchains since 2019.
+                  Sygma is consulting{" "}
+                  <a href="https://chainsafe.io" target="__blank">
+                    {" "}
+                    ChainSafe
+                  </a>
+                  , a leading blockchain R&D firm.
                 </p>
               </div>
             </div>
-            <dl className="mt-6 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-6 sm:grid-cols-4">
+            <dl className="mt-6 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-6 sm:grid-cols-3">
               {stats.map((stat, statIdx) => (
                 <div key={statIdx}>
                   <dt className="text-sm font-medium leading-6 text-primary-100">
                     {stat.label}
                   </dt>
-                  <dd className="mt-2 text-3xl font-semibold leading-10 tracking-tight text-gray-200">
-                    {stat.value}
-                  </dd>
+                  <a
+                    className="transition hover:brightness-75"
+                    href={stat.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <dd className="mt-2 text-xl font-semibold tracking-tight text-gray-200">
+                      {stat.value}
+                    </dd>
+                  </a>
                 </div>
               ))}
             </dl>

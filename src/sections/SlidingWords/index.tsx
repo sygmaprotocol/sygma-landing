@@ -1,7 +1,7 @@
 import Pill from '@/components/Pill';
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { stylesWithCssVar } from '@/utils/useCssVar';
+
 
 type Props = {};
 

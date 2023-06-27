@@ -23,13 +23,13 @@ export default function DevFeature1() {
                 href="https://docs.buildwithsygma.com/sdk/quickstart/gmp"
                 type="primary"
               >
-                Read Quick-Start Guide
+                Quick-Start Guide
               </GiantButton>
               <GiantButton
                 href="https://docs.buildwithsygma.com/architecture"
                 type="primary"
               >
-                View Network Architecture
+                Network Architecture Diagrams
               </GiantButton>
             </div>
           </div>

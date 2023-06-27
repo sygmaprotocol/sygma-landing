@@ -1,8 +1,17 @@
 import GiantButton from "@/components/GiantButton";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
 
 export default function DevFeature2() {
+  const targetRef = useRef<HTMLDivElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start start", "end end"],
+  });
+
+  const fadeIn = useTransform(scrollYProgress, [0, 0.05], [1, 1]);
   return (
-    <div className="bg-gray-900">
+    <motion.div ref={targetRef} className="bg-gray-900">
       <div className="relative isolate pt-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -16,7 +25,12 @@ export default function DevFeature2() {
             }}
           />
         </div>
-        <div className="py-8 sm:py-32 lg:pb-40">
+        <motion.div
+          style={{
+            opacity: fadeIn,
+          }}
+          className="py-8 sm:py-32 lg:pb-40"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -59,8 +73,8 @@ export default function DevFeature2() {
               </GiantButton>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

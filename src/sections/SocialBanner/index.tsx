@@ -11,7 +11,7 @@ const socials = [
   },
   {
     name: "Github",
-    imageUrl: "/socials/Github.png",
+    imageUrl: "/socials/GitHub.png",
     url: "https://github.com/sygmaprotocol",
   },
   {
