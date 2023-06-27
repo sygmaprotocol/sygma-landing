@@ -62,7 +62,7 @@ export const navbarDeveloperOptions: MenuOption[] = [
 ];
 
 export const navbarDeveloperCTA = [
-  { name: "Apply to Builder's Program", href: "/builders", icon: WrenchIcon },
+  { name: "Apply to Builder's Program", href: "/builders-program", icon: WrenchIcon },
 ];
 
 export const navbarDiscoverOptions: MenuOption[] = [
