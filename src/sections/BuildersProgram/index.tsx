@@ -37,7 +37,7 @@ export default function BuildersProgram() {
               <ExternalButton
                 className="mt-w-auto"
                 type="secondary"
-                href="/builders-program"
+                href="/builders"
               >
                 Apply Now
               </ExternalButton>
