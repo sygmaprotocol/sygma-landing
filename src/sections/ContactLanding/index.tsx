@@ -18,7 +18,7 @@ const cards = [
     name: "General Inquiry/Partnerships",
     description: "Find out how your team can partner with Sygma.",
     icon: HandRaisedIcon,
-    to: "mailto:",
+    to: "/general-inquiry",
   },
   {
     name: "Report a bug",
