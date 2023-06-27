@@ -8,7 +8,8 @@ export const footerLinks = {
   ],
   developers: [
     { name: "Documentation", href: "https://docs.buildwithsygma.com/" },
-    { name: "Builder's Program", href: "/builders" },
+    { name: "Contributor Program", href: "/contributors" },
+    { name: "Builder's Program", href: "/builders-program" },
     {
       name: "Github",
       href: "https://github.com/sygmaprotocol",
