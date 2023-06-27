@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "@/sections/Hero";
 import Footer from "@/components/Footer";
+import { GetStaticProps } from "next";
 import CTA from "@/sections/SubscribeNewsletter";
 import LogoCloud from "@/components/LogoCloud";
 import BuildersProgram from "@/sections/BuildersProgram";
@@ -12,23 +13,24 @@ import DevFeature2 from "@/sections/DevFeature2";
 import DevJourney from "@/sections/DevJourney";
 import SlidingWords from "@/sections/SlidingWords";
 import CoreFeatures from "@/sections/CoreFeatures";
+import BlogTeaser from "@/sections/BlogTeaser";
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const posts = await getAllPosts();
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = await getAllPosts();
 
-//   if (!posts) {
-//     return {
-//       notFound: true,
-//     };
-//   }
+  if (!posts) {
+    return {
+      notFound: true,
+    };
+  }
 
-//   return {
-//     props: { posts },
-//   };
-// };
+  return {
+    props: { posts },
+  };
+};
 
 export default function Home(props: any) {
-  // const { posts } = props;
+  const { posts } = props;
   return (
     <HubspotProvider>
       <>
@@ -57,8 +59,8 @@ export default function Home(props: any) {
         <CoreFeatures />
         <BuildersProgram />
         <SocialBanner />
-        {/* <BlogTeaser posts={posts} /> */}
         <CTA />
+        <BlogTeaser posts={posts} />
         <Footer />
       </>
     </HubspotProvider>
