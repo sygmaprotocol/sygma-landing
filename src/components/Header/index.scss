@@ -1,0 +1,49 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.nav {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  height: 40px;
+  top: .75rem;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    h4 {
+      @extend %body;
+      margin-left: .5rem;
+    }
+  }
+
+  .button {
+    @media #{$mq-md} {
+      right: 1.25rem;
+    }
+    right: 2rem;
+    display: flex;
+    position: relative;
+    z-index: 500;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 50%;
+    padding: .55rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.24s ease-out;
+    &:hover {
+      background: lightgray;
+    }
+  }
+}

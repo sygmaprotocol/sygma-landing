@@ -1,0 +1,75 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.hero {
+  background: $primary;
+  border-radius: 30px;
+  min-height: 65vh;
+  @media #{$mq-xl} {
+    min-height: 50vh;
+  }
+  &--header {
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  
+    .title-wrapper {
+      @media #{$mq-sm} {
+        align-items: flex-start;
+      }
+      margin-top: 30vh;
+      display: flex;
+      flex-direction: column;
+
+      .title-text {
+        @extend %h1;
+        font-weight: bolder;
+        text-align: left;
+        margin: auto 0 0 0;
+      }
+    }
+    .hero-description {
+      @media #{$mq-lg} {
+        max-width: 44rem;
+      }
+      @extend %body;
+    }
+  }
+  .button-wrapper {
+    @media #{$mq-lg} {
+      flex-direction: row;
+    }
+    display: flex;
+    flex-direction: column;
+    a {
+      @media #{$mq-lg} {
+        margin: 0 .5rem 0 0;
+      }
+      @extend %body;
+      font-size: 18px;
+      font-weight: bolder;
+      color: $white;
+      text-decoration: none;
+      cursor: pointer;
+      padding: .5rem 1.2rem;
+      border: none;
+      background: $black;
+      transition: all 0.1s ease-out;
+      border-radius: 12px;
+      margin-bottom: .5rem;
+      &:nth-of-type(2) {
+        background: $white;
+        color: $black;
+        &:hover {
+          background: $gray-100;
+        }
+      }
+      &:hover {
+        background: #262626;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.roadmap {
+  background: $primary;
+  border-radius: 30px;
+  margin-top: .5rem;
+  padding: 2rem 0 3rem 0;
+  &--header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    &:first-of-type {
+      padding: 1rem 0;
+    }
+  }  
+}
+
+.roadmap .double-column {
+  @media #{$mq-md} {
+    flex-direction: row;
+  };
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+
+  
+  img {
+    @media #{$mq-md} {
+      margin-right: 2rem;
+      width: 50%;
+    }
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .text-wrapper {
+    @media #{$mq-md} {
+      width: 50%;
+      margin-left: 8px;
+    }
+    width: 100%;
+    
+    h4 {
+      @extend %body-lg;
+      font-weight: bolder;
+    }
+    
+    p { 
+      @media #{$mq-xl} {
+        max-width: 30rem;
+      }
+      @media #{$mq-md} {
+        margin: 0 2rem;
+      }
+      @extend %body;
+    }
+  }
+}

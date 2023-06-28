@@ -1,0 +1,103 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.footer { 
+  @media #{$mq-md} {
+    align-items: center;
+  }
+  margin: 4rem 0 2rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .links {
+    @media #{$mq-xl} {
+      max-width: 1200px;
+      padding: 0 20%;
+      display: grid;
+    }
+    margin: 1rem 1rem 0;
+
+    &--column {
+      @media #{$mq-xl} {
+        flex-basis: 200px;
+      }
+      @media #{$mq-md} {
+        flex-direction: row;
+        margin: .5rem 0;
+        align-items: center;
+      }
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+      h4 {
+        @extend %body;
+        margin-block-start: 0;
+        margin-block-end: .5rem;
+      }
+      .footer-link {
+        @media #{$mq-md} {
+          margin-right: 1rem;
+          margin-bottom: unset;
+        }
+        margin-bottom: .5rem;
+        @extend %body;
+        font-size: 18px;
+        text-decoration: none;
+        color: #262626;
+        font-weight: bolder;
+        &:hover {
+          color: $primary;
+          transition: 0.2s ease-in;
+        }
+      }
+      .icons {
+        @media #{$mq-lg} {
+          text-align: end;
+        }
+        a {
+          color: $black;
+          cursor: pointer;
+          margin-right: .5rem;
+          &:hover {
+            transition: 0.2s ease-in;
+            color: $primary;
+          }
+        }
+
+      }
+      button {
+        @media #{$mq-md} {
+          margin-left: 2rem;
+        }
+        cursor: pointer;
+        border-radius: 8px;
+        padding: .4rem;
+        border: none;
+        background: $black;
+        transition: all 0.1s ease-out;
+        width: 200px;
+        .newsletter-link {
+          @extend %body;
+          font-size: 18px;
+          font-weight: bolder;
+          color: $white;
+          margin-right: none;
+          text-decoration: none;
+        }
+        &:hover {
+          background: #262626;
+        }
+      }
+    }
+    &--column:nth-of-type(2) {
+      display: flex;
+      row-gap: .5rem;
+      justify-self: end;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.use-cases {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+
+  &--title {
+    margin: 0 2rem;
+
+    h1 {
+      @extend %h1;
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: bolder;
+      color: $black;
+    }
+  }
+  &--tab-menu {
+    @media #{$mq-md} { 
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: .5rem .5rem 0 0;
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .tab {
+    @media #{$mq-md} { 
+      margin: 0 2rem;
+    }
+    margin: .5rem 0;
+    @extend %body;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .tab-content-container {
+    @media #{$mq-md} { 
+      flex-direction: row;
+      align-items: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .active-tab {
+    color: $primary;
+    font-weight: 600;
+  }
+
+  .tab-content {
+    @media #{$mq-md} { 
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: 1rem .5rem 0 0;
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .content-selected {
+    @media #{$mq-lg} {
+      flex-direction: row;
+      margin: 1.5rem 2rem 3rem;
+    }
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1.5rem 0 3rem;
+    
+    img {
+      @media #{$mq-md} { 
+        width: 50%;
+        margin-right: 1rem;
+      }
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+    .content-text {
+      @media #{$mq-md} {
+        margin: 0;
+      }
+      margin: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      h4 {
+        @media #{$mq-md} {
+          max-width: 500px;
+        }
+        @extend %body-lg;
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+
+      p {
+        @media #{$mq-md} {
+          width: 400px;
+        }
+        @extend %body;
+        color: $black;
+      }
+    }
+  }
+
+  .content-unselected {
+    display: none;
+  }
+}

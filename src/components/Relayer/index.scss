@@ -1,0 +1,68 @@
+@import "src/styles/breakpoints.scss";
+@import "src/styles/colors.scss";
+@import "src/styles/typography.scss";
+
+.relayer {
+  background: $black;
+  border-radius: 30px;
+  margin-top: .5rem;
+  padding: 2rem 0 3rem 0;
+  &--header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    &:first-of-type {
+      padding: 1rem 0;
+    }
+  }  
+}
+
+.relayer .double-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  color: $white;
+
+  h4 { 
+    @media #{$mq-md} {
+    }
+    margin-bottom: 1rem;
+  }
+
+  button {
+      cursor: pointer;
+      border-radius: 12px;
+      padding: .5rem 1.2rem;
+      border: none;
+      background: #262626;
+      transition: all 0.2s ease-out;
+      margin-right: .5rem;
+      a {
+        @extend %body;
+        font-size: 18px;
+        font-weight: bolder;
+        color: $white;
+        text-decoration: none;
+      }
+      &:hover {
+        background: $primary;
+      }
+    }
+}
+
+.relayer--partners .showcase {
+  @media #{$mq-md} {
+    flex-direction: row;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
+
+  &--item {
+    width: 80px;
+    height: 80px;
+    background: #262626;
+    border-radius: 50%;
+  }
+}
