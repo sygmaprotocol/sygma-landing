@@ -22,7 +22,7 @@ jobs:
         uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 2238a825c5aca59233eab1f221f7aefb
+          accountId: b68ca47ec310af3de59af7ed6413d58f
           projectName: sygma-landing
           directory: out/
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
