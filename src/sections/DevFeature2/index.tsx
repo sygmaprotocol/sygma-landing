@@ -41,9 +41,11 @@ export default function DevFeature2() {
                 transactions between Polkadot, Ethereum, and more.
               </p>
             </div>
-            <video autoPlay muted loop className="mx-auto lg:max-w-4xl">
-              <source src="transfer.mp4" type="video/mp4" />
-            </video>
+            <img
+              className="mx-auto lg:max-w-4xl"
+              src="/transfer.gif"
+              alt="Sygma's code snippet video showcasing token transfers between EVM and Substrate chains, demonstrating cross-chain interoperability in action"
+            />
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
               <GiantButton
                 href="https://transfer-ui.test.buildwithsygma.com/transfer"

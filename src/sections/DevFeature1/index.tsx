@@ -15,9 +15,11 @@ export default function DevFeature1() {
                 click of a button.
               </p>
             </div>
-            <video autoPlay muted loop className="mx-auto lg:max-w-4xl">
-              <source src="data.mp4" type="video/mp4" />
-            </video>
+            <img
+              className="mx-auto lg:max-w-4xl"
+              src="/transfer.gif"
+              alt="Sygma's code snippet video demonstrating the power of general message passing for cross-chain communication, enabling seamless transfer of arbitrary data between different blockchain networks"
+            />
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
               <GiantButton
                 href="https://docs.buildwithsygma.com/sdk/quickstart/gmp"

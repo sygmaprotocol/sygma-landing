@@ -49,6 +49,18 @@ export default function Home(props: any) {
             content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
             for seamless communication across EVM, Substrate, Cosmos and more."
           />
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js.hs-scripts.com/39701769.js"
+          ></script>
+          <script
+            defer
+            data-domain="buildwithsygma.com"
+            src="https://plausible.io/js/script.js"
+          ></script>
         </Head>
         <Hero />
         <LogoCloud />
