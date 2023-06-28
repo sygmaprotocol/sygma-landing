@@ -10,17 +10,17 @@ export default function CommunityProgram() {
               Catalyzing a cross-chain builder community
             </p>
             <p className="my-3 leading-6 text-gray-600">
-              At Sygma, we aim to create a thriving community of open source
-              contributors that helps cross-chain builders create and share
-              modular components for effortless integration of cross-chain use
-              cases in DeFi, gaming, and more.
+              Sygma is fostering a community of open-source contributors that
+              help cross-chain builders create and share modular components for
+              effortless integration of cross-chain use cases in governance,
+              DeFi, gaming, and more.
             </p>
 
             <div className="my-6">
               <ExternalButton
                 className="mt-w-auto"
                 type="secondary"
-                href="/contributors-program"
+                href="/contributors"
               >
                 Learn more
               </ExternalButton>

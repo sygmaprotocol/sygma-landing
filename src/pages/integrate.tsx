@@ -6,7 +6,7 @@ import SubscribeNewsletter from "@/sections/SubscribeNewsletter";
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 import Head from "next/head";
 
-export default function solutions(props: any) {
+export default function Integrate(props: any) {
   return (
     <HubspotProvider>
       <Head>

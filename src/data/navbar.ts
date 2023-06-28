@@ -29,9 +29,9 @@ export type CTA = {
 
 export const navbarProductOptions: MenuOption[] = [
   {
-    name: "Solutions",
+    name: "Integrations",
     description: "Engineering and research at your service.",
-    href: "/solutions",
+    href: "/integrate",
     icon: WrenchScrewdriverIcon,
   },
 ];

@@ -8,7 +8,7 @@ export default function DevFeature1() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-2xl font-semibold tracking-tight text-black sm:text-5xl">
-                Say hello to native interoperability.
+                Say hello to native interoperability
               </h1>
               <p className="my-6 text-lg leading-8 text-gray-700">
                 Easily integrate the Sygma SDK and send data cross-chain with a

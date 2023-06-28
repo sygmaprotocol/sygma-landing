@@ -25,8 +25,8 @@ export default function CoreFeatures() {
               Flexible and extensible
             </p>
             <p className="mt-6 text-lg leading-6 text-gray-600">
-              Sygma allows developers to extend their applications across
-              ecosystems and explore new use cases with a versatile, modular
+              Sygma allows developers to expand their applications to new
+              ecosystems and explore novel use cases with a versatile, modular
               protocol.
             </p>
           </div>

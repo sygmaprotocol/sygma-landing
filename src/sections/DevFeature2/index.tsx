@@ -38,7 +38,7 @@ export default function DevFeature2() {
               </h1>
               <p className="my-6 text-lg leading-8 text-gray-300">
                 Sygma SDK tells you which parameters you need to send
-                transactions between Polkadot, Ethereum and more.
+                transactions between Polkadot, Ethereum, and more.
               </p>
             </div>
             <video autoPlay muted loop className="mx-auto lg:max-w-4xl">

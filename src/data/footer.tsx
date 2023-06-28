@@ -2,8 +2,8 @@ export const footerLinks = {
   product: [
     { name: "SDK", href: "https://github.com/sygmaprotocol/sygma-sdk" },
     {
-      name: "Solutions",
-      href: "/solutions",
+      name: "Integrations",
+      href: "/integrate",
     },
   ],
   developers: [
