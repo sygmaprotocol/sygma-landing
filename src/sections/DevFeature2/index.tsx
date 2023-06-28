@@ -1,6 +1,8 @@
 import GiantButton from "@/components/GiantButton";
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
+import transfergif from "../../../public/transfer.gif";
+import Image from "next/image";
 
 export default function DevFeature2() {
   const targetRef = useRef<HTMLDivElement | null>(null);
@@ -41,11 +43,12 @@ export default function DevFeature2() {
                 transactions between Polkadot, Ethereum, and more.
               </p>
             </div>
-            <img
+            {/* <Image
               className="mx-auto lg:max-w-4xl"
-              src="/transfer.gif"
+              src={transfergif}
               alt="Sygma's code snippet video showcasing token transfers between EVM and Substrate chains, demonstrating cross-chain interoperability in action"
-            />
+            /> */}
+            <img className="mx-auto lg:max-w-4xl" src="/transfer.gif" />
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
               <GiantButton
                 href="https://transfer-ui.test.buildwithsygma.com/transfer"
