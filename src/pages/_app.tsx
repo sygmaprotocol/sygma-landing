@@ -8,7 +8,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={interTight.className}>
       <Component {...pageProps} />
-      {/* <Script src="" */}
     </main>
   );
 }

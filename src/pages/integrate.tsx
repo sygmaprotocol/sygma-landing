@@ -17,6 +17,24 @@ export default function Integrate(props: any) {
           expertise to build innovative applications and unlock the power of
           cross-chain connectivity."
         />
+        <meta
+          name="description"
+          content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
+            for seamless communication across EVM, Substrate, Cosmos and more."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@buildwithsygma" />
+        <meta
+          name="twitter:title"
+          content="The interoperability layer for building cross-blockchain
+            applications"
+        />
+        <meta
+          name="twitter:description"
+          content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
+            for seamless communication across EVM, Substrate, Cosmos and more."
+        />
+        <meta name="twitter:image" content="/Home.png" />
       </Head>
       <SolutionsHero />
       <FormPageTemplate

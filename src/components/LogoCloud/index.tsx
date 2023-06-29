@@ -27,17 +27,25 @@ const logos = [
 
 const LogoCloud = (props: Props) => {
   return (
-    <div className='grid grid-cols-2 gap-0.5 text-center sm:grid-cols-3 lg:grid-cols-5 py-5 bg-white w-full'>
-      {logos.map((logo) => (
-        <div className='self-center justify-self-center px-3' key={logo.name}>
-          <img
-            className='max-w-[120px]'
-            src={`/partners/${logo.imgUrl}.png`}
-            alt={logo.name}
-          />
+    <>
+      <div className="bg-white py-5">
+        <p className="text-center text-gray-400">Trusted by the ecosystem</p>
+        <div className="grid w-full grid-cols-2 gap-0.5 sm:grid-cols-3 lg:grid-cols-5">
+          {logos.map((logo) => (
+            <div
+              className="self-center justify-self-center px-3"
+              key={logo.name}
+            >
+              <img
+                className="max-w-[120px]"
+                src={`/partners/${logo.imgUrl}.png`}
+                alt={logo.name}
+              />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 
