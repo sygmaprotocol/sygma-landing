@@ -31,6 +31,34 @@ export default function Home(props: any) {
             content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
             for seamless communication across EVM, Substrate, Cosmos and more."
           />
+          {/*<!-- OG Meta Tags -->*/}
+          <meta
+            property="og:url"
+            content="https://buildwithsygma.com/"
+            key="ogurl"
+          />
+          <meta
+            property="og:image"
+            content="https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/3593c6f4-4eb9-4e82-cdd9-564d4ddc5c00/public"
+            key="ogimage"
+          />
+          <meta
+            property="og:site_name"
+            content="Sygma Website"
+            key="ogsitename"
+          />
+          <meta
+            property="og:title"
+            content="The interoperability layer for building cross-blockchain
+            applications | Sygma"
+            key="ogtitle"
+          />
+          <meta
+            property="og:description"
+            content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
+            for seamless communication across EVM, Substrate, Cosmos and more."
+            key="ogdesc"
+          />
           {/*<!-- Twitter Meta Tags -->*/}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@buildwithsygma" />
@@ -46,7 +74,7 @@ export default function Home(props: any) {
           />
           <meta
             name="twitter:image"
-            content="/https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/3593c6f4-4eb9-4e82-cdd9-564d4ddc5c00/public"
+            content="https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/3593c6f4-4eb9-4e82-cdd9-564d4ddc5c00/public"
           />
           <script
             type="text/javascript"
