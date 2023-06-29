@@ -31,6 +31,7 @@ export default function Home(props: any) {
             content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
             for seamless communication across EVM, Substrate, Cosmos and more."
           />
+          {/*<!-- Twitter Meta Tags -->*/}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@buildwithsygma" />
           <meta
@@ -43,7 +44,10 @@ export default function Home(props: any) {
             content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
             for seamless communication across EVM, Substrate, Cosmos and more."
           />
-          <meta name="twitter:image" content="/Home.png" />
+          <meta
+            name="twitter:image"
+            content="/https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/3593c6f4-4eb9-4e82-cdd9-564d4ddc5c00/public"
+          />
           <script
             type="text/javascript"
             id="hs-script-loader"

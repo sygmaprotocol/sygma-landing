@@ -26,7 +26,10 @@ export default function solutions(props: any) {
           name="twitter:description"
           content="Join our program for technical support, incentives, and resources to build on Sygma. Shape the cross-chain ecosystem with us."
         />
-        <meta name="twitter:image" content="/CP.png" />
+        <meta
+          name="twitter:image"
+          content="https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/7751015e-7685-47bd-6fe8-fe81adf2eb00/public"
+        />
       </Head>
       <Navbar />
       <FormPageTemplate
