@@ -16,6 +16,17 @@ export default function solutions(props: any) {
           name="description"
           content="Join our program for technical support, incentives, and resources to build on Sygma. Shape the cross-chain ecosystem with us."
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@buildwithsygma" />
+        <meta
+          name="twitter:title"
+          content="Sygma Contributor Program for Cross-Chain Innovation"
+        />
+        <meta
+          name="twitter:description"
+          content="Join our program for technical support, incentives, and resources to build on Sygma. Shape the cross-chain ecosystem with us."
+        />
+        <meta name="twitter:image" content="/CP.png" />
       </Head>
       <Navbar />
       <FormPageTemplate
