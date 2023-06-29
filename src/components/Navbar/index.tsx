@@ -37,14 +37,14 @@ export default function Navbar() {
         {/* navbar  */}
         <div className="hidden lg:flex lg:gap-x-12">
           <FlyoutMenuItem
-            name="Product"
-            options={navbarProductOptions}
-            callsToAction={navbarProductCTA}
-          />
-          <FlyoutMenuItem
             name="Developers"
             options={navbarDeveloperOptions}
             callsToAction={navbarDeveloperCTA}
+          />
+          <FlyoutMenuItem
+            name="Product"
+            options={navbarProductOptions}
+            callsToAction={navbarProductCTA}
           />
           <FlyoutMenuItem name="Discover" options={navbarDiscoverOptions} />
         </div>{" "}
