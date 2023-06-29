@@ -1,28 +1,28 @@
-on: [push]
+# on: [push]
 
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    name: Publish to Cloudflare Pages
-    steps:
-      - name: Chekout
-        uses: actions/checkout@v3
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          cache: npm
-          node-version: 16
-      - run: npm install --frozen-lockfile
-      - run: npm run build
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: read
+#       deployments: write
+#     name: Publish to Cloudflare Pages
+#     steps:
+#       - name: Chekout
+#         uses: actions/checkout@v3
+#       - name: Install Node
+#         uses: actions/setup-node@v3
+#         with:
+#           cache: npm
+#           node-version: 18
+#       - run: npm install --frozen-lockfile
+#       - run: npm run build
 
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: b68ca47ec310af3de59af7ed6413d58f
-          projectName: sygma-landing
-          directory: out/
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Publish to Cloudflare Pages
+#         uses: cloudflare/pages-action@1
+#         with:
+#           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+#           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+#           projectName: sygma-landing
+#           directory: out/
+#           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
