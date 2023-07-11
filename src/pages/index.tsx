@@ -86,7 +86,7 @@ export default function Home(props: any) {
           <script
             defer
             data-domain="buildwithsygma.com"
-            src="https://plausible.io/js/script.js"
+            src="https://plausible.io/js/script.outbound-links.js"
           ></script>
         </Head>
         <Hero />
