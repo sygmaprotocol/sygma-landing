@@ -19,6 +19,11 @@ const socials = [
     imageUrl: "/socials/Linkedin.png",
     url: "https://www.linkedin.com/company/buildwithsygma",
   },
+  {
+    name: "Youtube",
+    imageUrl: "/socials/Youtube.png",
+    url: "https://www.youtube.com/@buildwithsygma",
+  },
 ];
 
 export default function SocialBanner() {

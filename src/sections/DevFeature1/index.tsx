@@ -17,12 +17,12 @@ export default function DevFeature1() {
             </div>
             <img
               className="mx-auto lg:max-w-4xl"
-              src="/transfer.gif"
+              src="/data.gif"
               alt="Sygma's code snippet video demonstrating the power of general message passing for cross-chain communication, enabling seamless transfer of arbitrary data between different blockchain networks"
             />
             <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
               <GiantButton
-                href="https://docs.buildwithsygma.com/sdk/quickstart/gmp"
+                href="https://docs.buildwithsygma.com/sdk/quickstart/install"
                 type="primary"
               >
                 Quick-Start Guide
