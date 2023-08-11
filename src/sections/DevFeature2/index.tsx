@@ -72,7 +72,7 @@ export default function DevFeature2() {
               </GiantButton>
               <GiantButton
                 type="secondary"
-                href="https://docs.buildwithsygma.com/sdk/examples/node-js-example"
+                href="https://docs.buildwithsygma.com/sdk/examples/evm-example"
               >
                 Sending EVM Transfers (CLI){" "}
               </GiantButton>
