@@ -7,8 +7,8 @@ export type FormPageProps = {
   hsFormId: string;
   hsPortalId: string;
   targetName: string;
-  title: string;
-  desc: string;
+  title?: string;
+  desc?: string;
   showTimeZones?: boolean;
 };
 
@@ -35,27 +35,7 @@ export default function FormPageTemplate({
             <h1 className="text-4xl font-bold tracking-tight text-black">
               {title}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-900">{desc}</p>
-            {showTimeZones && (
-              <dl className="mt-10 space-y-4 text-base leading-7 text-gray-900">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Offices</span>
-                    <BuildingOffice2Icon
-                      className="h-7 w-6 text-gray-700"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    Based in the following timezones:
-                    <br />
-                    Berlin (GMT+2)
-                    <br />
-                    Toronto (EST)
-                  </dd>
-                </div>
-              </dl>
-            )}
+            <p className="mt-6 text-lg leading-7 text-gray-900">{desc}</p>
           </div>
         </div>
 
