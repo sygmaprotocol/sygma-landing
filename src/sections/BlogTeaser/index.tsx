@@ -1,4 +1,5 @@
 import BlogCard from "@/components/BlogCard";
+import { getAllPosts } from "@/ghost-client";
 
 export type Post = {
   title: string;
@@ -21,7 +22,7 @@ export type Post = {
   showExcerpt?: boolean;
 };
 
-const BlogTeaser: React.FC<{ posts: Post[] }> = (props) => {
+const BlogTeaser: React.FC<{ posts: any }> = (props) => {
   const { posts } = props;
 
   return (
@@ -33,7 +34,7 @@ const BlogTeaser: React.FC<{ posts: Post[] }> = (props) => {
           </h2>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts
+          { posts && posts
             .map((post: Post) => (
               <BlogCard key={post.id} {...post} showExcerpt={true} />
             ))
@@ -44,4 +45,4 @@ const BlogTeaser: React.FC<{ posts: Post[] }> = (props) => {
   );
 };
 
-export default BlogTeaser;
+export default BlogTeaser

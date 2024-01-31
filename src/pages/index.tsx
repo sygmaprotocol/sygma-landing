@@ -11,8 +11,16 @@ import DevFeature2 from "@/sections/DevFeature2";
 import DevJourney from "@/sections/DevJourney";
 import SlidingWords from "@/sections/SlidingWords";
 import CoreFeatures from "@/sections/CoreFeatures";
+import ProductOverview from "@/sections/ProductOverview";
+import BlogTeaser from "@/sections/BlogTeaser";
+import { getAllPosts } from "@/ghost-client";
+// import { use } from 'react';
 
 export default function Home(props: any) {
+  const posts = getAllPosts();
+  
+  console.log(posts);
+
   return (
     <HubspotProvider>
       <>
@@ -94,12 +102,14 @@ export default function Home(props: any) {
         <DevFeature2 />
         <DevFeature1 />
         <SlidingWords />
+        <ProductOverview />
         <DevJourney />
         <CoreFeatures />
         <BuildersProgram />
         <SocialBanner />
         <CTA />
         <Footer />
+        <BlogTeaser posts={posts} />
       </>
     </HubspotProvider>
   );
