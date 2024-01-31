@@ -65,14 +65,14 @@ export default function DevFeature2() {
             </div>
             <div className="mx-auto mt-2  flex max-w-4xl justify-between gap-2">
               <GiantButton
-                href="https://docs.buildwithsygma.com/sdk/examples/substrate-evm-example"
+                href="https://docs.buildwithsygma.com/sdk/quickstart/examples/erc20/substrate-evm-example"
                 type="secondary"
               >
                 Sending Substrate Transfers (CLI){" "}
               </GiantButton>
               <GiantButton
                 type="secondary"
-                href="https://docs.buildwithsygma.com/sdk/examples/evm-example"
+                href="https://docs.buildwithsygma.com/sdk/quickstart/examples/erc20/evm-example"
               >
                 Sending EVM Transfers (CLI){" "}
               </GiantButton>
