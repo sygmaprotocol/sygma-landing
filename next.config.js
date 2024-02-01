@@ -32,7 +32,7 @@ module.exports = {
   },
   env: {
     ghostKey: process.env.NEXT_PUBLIC_GHOST_KEY,
-    ghostUrl: process.env.GHOST_URL,
+    ghostUrl: process.env.NEXT_PUBLIC_GHOST_URL,
   },
   reactStrictMode: true,
 };

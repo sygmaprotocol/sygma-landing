@@ -14,6 +14,5 @@ export async function getAllPosts(props?: { limit: number }): Promise<PostsOrPag
     include: ["tags", "authors"],
     ...(props && { ...props }),
   })
-  console.log(posts);
   return await posts;
 }

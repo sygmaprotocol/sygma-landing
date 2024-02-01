@@ -17,9 +17,7 @@ import { getAllPosts } from "@/ghost-client";
 // import { use } from 'react';
 
 export default function Home(props: any) {
-  const posts = getAllPosts();
-  
-  console.log(posts);
+
 
   return (
     <HubspotProvider>
@@ -109,7 +107,6 @@ export default function Home(props: any) {
         <SocialBanner />
         <CTA />
         <Footer />
-        <BlogTeaser posts={posts} />
       </>
     </HubspotProvider>
   );
