@@ -37,7 +37,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-x-2 gap-y-4 md:flex-row">
               <ExternalButton
-                href="https://docs.buildwithsygma.com/sdk/introduction"
+                href="https://docs.buildwithsygma.com/sdk"
                 type="primary"
               >
                 Start Building
