@@ -100,7 +100,6 @@ export default function Home(props: any) {
         <DevFeature2 />
         <DevFeature1 />
         <SlidingWords />
-        <ProductOverview />
         <DevJourney />
         <CoreFeatures />
         <BuildersProgram />
