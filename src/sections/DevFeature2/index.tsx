@@ -49,20 +49,6 @@ export default function DevFeature2() {
               alt="Sygma's code snippet video showcasing token transfers between EVM and Substrate chains, demonstrating cross-chain interoperability in action"
             /> */}
             <img className="mx-auto lg:max-w-4xl" src="/transfer.gif" />
-            <div className="mx-auto mt-10  flex max-w-4xl justify-between gap-2">
-              <GiantButton
-                href="https://transfer-ui.test.buildwithsygma.com/transfer"
-                type="primary"
-              >
-                Fungible Token Transfer Demo (UI)
-              </GiantButton>
-              <GiantButton
-                href="https://transfer-ui.test.buildwithsygma.com/transfer"
-                type="primary"
-              >
-                NFT Transfer Demo (UI){" "}
-              </GiantButton>
-            </div>
             <div className="mx-auto mt-2  flex max-w-4xl justify-between gap-2">
               <GiantButton
                 href="https://docs.buildwithsygma.com/sdk/quickstart/examples/erc20/substrate-evm-example"
