@@ -11,9 +11,6 @@ import DevFeature2 from "@/sections/DevFeature2";
 import DevJourney from "@/sections/DevJourney";
 import SlidingWords from "@/sections/SlidingWords";
 import CoreFeatures from "@/sections/CoreFeatures";
-import ProductOverview from "@/sections/ProductOverview";
-import BlogTeaser from "@/sections/BlogTeaser";
-import { getAllPosts } from "@/ghost-client";
 // import { use } from 'react';
 
 export default function Home(props: any) {
