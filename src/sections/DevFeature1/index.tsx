@@ -25,13 +25,13 @@ export default function DevFeature1() {
                 href="https://docs.buildwithsygma.com/sdk/quickstart/install"
                 type="primary"
               >
-                Quick-Start Guide
+                Quickstart to the SDK
               </GiantButton>
               <GiantButton
-                href="https://docs.buildwithsygma.com/architecture"
+                href="https://docs.buildwithsygma.com/protocol"
                 type="primary"
               >
-                Network Architecture Diagrams
+                About the protocol
               </GiantButton>
             </div>
           </div>

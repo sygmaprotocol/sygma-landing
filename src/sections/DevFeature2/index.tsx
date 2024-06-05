@@ -51,16 +51,16 @@ export default function DevFeature2() {
             <img className="mx-auto lg:max-w-4xl" src="/transfer.gif" />
             <div className="mx-auto mt-2  flex max-w-4xl justify-between gap-2">
               <GiantButton
-                href="https://docs.buildwithsygma.com/sdk/quickstart/examples/erc20/substrate-evm-example"
+                href="https://docs.buildwithsygma.com/sdk/quickstart/substrate-token-transfer"
                 type="secondary"
               >
-                Sending Substrate Transfers (CLI){" "}
+                Sending Substrate Transfers
               </GiantButton>
               <GiantButton
                 type="secondary"
-                href="https://docs.buildwithsygma.com/sdk/quickstart/examples/erc20/evm-example"
+                href="https://docs.buildwithsygma.com/sdk/quickstart/transfertoken"
               >
-                Sending EVM Transfers (CLI){" "}
+                Sending EVM Transfers
               </GiantButton>
             </div>
           </div>
