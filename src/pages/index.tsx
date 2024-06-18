@@ -34,6 +34,7 @@ export default function Home(props: any) {
             content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
             for seamless communication across EVM, Substrate, Cosmos and more."
           />
+          <meta name="ahrefs-site-verification" content="fbc444205bf069fdb35a0ec4ab531600b1ad58c482bf0a5f9f54c15798f6f0c1"></meta>
           {/*<!-- OG Meta Tags -->*/}
           <meta
             property="og:url"
